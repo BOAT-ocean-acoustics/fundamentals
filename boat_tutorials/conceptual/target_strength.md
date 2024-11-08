@@ -29,9 +29,13 @@ absorption
 - spheres of different material properties
     - show TS spectra of rigid, bubble, fluid, elastic ([deeper topic]()), this brings in frequency dependency ([connect to spectrum]())
     - solve rigid sphere and bubble? -- would that be too much materials?
+    - **widget**: 1D bubble spectra
+        - allow changing material properties (except for elastic), size, frequency range
     - talk about frequency dependency using the bubble example
 - non-spherical scatterers
-    - show TS spectra for krill, this brings in orientation dependency ([connect to SL/beampattern]())
+    - show TS spectra for fluid prolate spheroid, this brings in orientation dependency ([connect to SL/beampattern]())
+    - **widget**: fluid prolate spheroid spectra over all angles
+        - allow changing aspect ratio, size, frequency range
 - practical examples:
     - fish school: assume no bio attenuation, no multiple scattering, no shadowing
     - echogram with fish vs zooplankton
@@ -49,6 +53,8 @@ absorption
     - show angular and frequency dependency ([connect to spectrum/fourier analysis]())
 - definition: scattering strength per unit area
 - the same concept applies to sea surface scattering
+- **widget**: seafloor scattering strength
+    - allow changing roughness and grazing angle, frequency range
 - examples:
     - perfect place to talk about sidescan: find object from noisy seafloor
 
@@ -59,6 +65,8 @@ absorption
     - fish density in an aggregation
 - connect back to discrete scatterers
     - mention multiple scattering and connect to transmission coefficients ([connect to TL page]())
+- **widget**: seabed volume scattering strength
+    - allow changing material properties, porosity, frequency range
 - others:
     - turbulence ([deeper topic]())
     - micro structures ([deeper topic]())
@@ -66,6 +74,7 @@ absorption
 
 
 
-## Related topics
+## Related primer topics
 - decibel
 - fourier analysis / spectrum
+- inference / estimation
