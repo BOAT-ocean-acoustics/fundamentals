@@ -17,10 +17,18 @@
     - intensity
     -  [link to decibel page]()
 - RMS, peak-to-peak, energy density flux
+    - show forumlae
 - spectrum
     - [link to Fourier analysis page]()
-    - beamforming [deeper level](): inducing constructive and destructive interference to "focus" on a particular direction
-- sources in contributing to soundscape
+- **widget**:
+    - allow changing signal type, duration, frequency and/or bandwitdh, amplitude
+    - show RMS/p2p/EDF numbers and plot spectrum
+- beamforming:
+    - intuition: inducing constructive and destructive interference to "focus" on a particular direction
+    - leave details to [deeper level]()
+    - **widget**: linear array
+        - allow changing: number of elements, element spacing, frequency, systematic delay to "steer" the beam
+- sources contributing to soundscape (show example)
     - rain
     - ice cracking
     - wind, breaking wave
