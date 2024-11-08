@@ -23,6 +23,7 @@ parts:
     - file: primers/decibel
     - file: primers/time_freq
     - file: primers/linear_system
+    - file: primers/instrument_selection
     # - file: echogram
   # - caption: Jupyter Book templates
   #   chapters:
