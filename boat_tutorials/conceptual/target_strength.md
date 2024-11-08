@@ -12,8 +12,10 @@ absorption
 
 ## Setup and terminology
 - monostatic vs bistatic ([deeper topic]())
-- differential scattering cross section --> TS ([connect to decibel page]())
 - total scattering cross section
+  - add intuitive example: shooting pellets to a sphere, what bounces away is related to the concept of "cross section"
+  - explain carefully that that is not all it is
+- differential scattering cross section --> TS ([connect to decibel page]())
 - extinction cross section (total power removed from the incident sound):
     - scattering cross section + absorption cross section
 
