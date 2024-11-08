@@ -6,26 +6,29 @@ root: what_is_boat
 parts:
   - caption: Getting started  # first level
     chapters:
-    - file: intro_first_level
-    - file: source_level
-    # - file: transmission_loss
-    # - file: target_strength
-    # - file: reverberation
-    # - file: received_level
+    - file: conceptual/intro_first_level
+    - file: conceptual/source_level
+    - file: conceptual/transmission_loss
+    - file: conceptual/target_strength
+    - file: conceptual/reverberation
+    - file: conceptual/received_level
       # sections:  # break up content into pages
       # - file: review_canonical
       # - file: review_variations
-  - caption: Best to know  # other important topics
+  - caption: In-depth knowledge  # deeper level
     chapters:
-    - file: decibel
-    # - file: spectrogram
+    - file: in_depth/wave_eq
+  - caption: Technical primers  # other important topics
+    chapters:
+    - file: primers/decibel
+    - file: primers/time_freq
+    - file: primers/linear_system
     # - file: echogram
-  # - caption: Into the weeds...  # deeper level
-  - caption: Jupyter Book templates
-    chapters:
-    - file: markdown
-    - file: notebooks
-    - file: markdown-notebooks
+  # - caption: Jupyter Book templates
+  #   chapters:
+  #   - file: markdown
+  #   - file: notebooks
+  #   - file: markdown-notebooks
   - caption: References
     chapters:
     - file: zbibliography
