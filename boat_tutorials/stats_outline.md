@@ -1,16 +1,11 @@
 # Statistics
 
-## Introduction to Random Variables, Distributions, and Sampling
-`distributions.ipynb`
-
-Learning Objectives:
-
-* Random Variables
+## Random Variables
   * Random experiment
   * Empirical distribution 
   * Empirical probability
 
-* Probability Distributions in Acoustics 
+## Probability Distributions in Acoustics 
   * Normal distribution
   * Poisson distribution
   * Exponentinal distribution 
@@ -18,7 +13,7 @@ Learning Objectives:
   * Raleigh distribution
   * Gaussian Mixture
 
-* Exercise: 
+## Exercise: Statistical Inference 
   * load a dataset
   * generate histogram
   * estimate the probability that X>x
@@ -28,7 +23,7 @@ Learning Objectives:
   * reference to future chapter on maximum likelihood
 
 
-  # Parameter Estimation (high level)
+## Parameter Estimation (high level)
   * Maximum Likelihood concept
   * Exercise: Fitting a distribution by modifying Parameters 
   
@@ -36,20 +31,17 @@ Learning Objectives:
 ## Confidence Intervals
 confidence_intervals.ipynb
 
-Learning Objectives:
-* 
-  * Motivation: example about the mean
-  * Statement
-  * Visual demonstration
-  * Widget: effect of changing parameters
-  * Discussion about error bars, standard errors
-
-* Bootstrap confidence intervals
-  * Widget: effect of changing parameters
-  * Exercise: Confidence interval for variance
+  * Motivation and definition
+    * Visual demonstration
+    * Widget: effect of changing parameters
+    * Discussion about error bars, standard errors
+  * Bootstrap confidence intervals
+    * Widget: effect of changing parameters
+    * Exercise: Confidence interval for variance
 
 
 ## Testing
+
 * Statistical Hypothesis: example with mean
 * Statistical Test, P-value, Power
 * Likelihood Ratio
@@ -58,8 +50,6 @@ Learning Objectives:
 
 ## Limit Theorems
 `limit_theorems.ipynb`
-
-Learning Objectives:
 
 * Motivation
 
