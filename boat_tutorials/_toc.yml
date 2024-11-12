@@ -20,6 +20,7 @@ parts:
     - file: in_depth/wave_eq
   - caption: Technical primers  # other important topics
     chapters:
+    - file: primers/stats_outline
     - file: primers/decibel
     - file: primers/time_freq
     - file: primers/linear_system
