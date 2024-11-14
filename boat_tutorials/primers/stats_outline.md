@@ -46,7 +46,7 @@ confidence_intervals.ipynb
 * Statistical Test, P-value, Power
 * Likelihood Ratio
 * Example: Signal detection
-
+* Non-parametric Tests
 
 ## Limit Theorems
 `limit_theorems.ipynb`
