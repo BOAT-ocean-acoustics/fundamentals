@@ -21,8 +21,7 @@ parts:
   - caption: Technical primers  # other important topics
     chapters:
     - file: primers/stats_outline
-    - file: primers/decibel
-    - file: primers/time_freq
+    - file: primers/signal_processing_outline
     - file: primers/linear_system
     # - file: echogram
   # - caption: Jupyter Book templates
