@@ -22,7 +22,7 @@ parts:
     chapters:
     - file: primers/stats_outline
     - file: primers/signal_processing_outline
-    - file: primers/linear_system
+    # - file: primers/linear_system
     # - file: echogram
   # - caption: Jupyter Book templates
   #   chapters:
