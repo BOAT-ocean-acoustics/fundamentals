@@ -12,6 +12,21 @@ To answer the first question we can design an experiment to collect observations
 
 *Exercise:* Outline a random experiment within your research area, identify the random variables observed, and their sample space.
 
+### Distributions and Histograms
+
+While if we observe a random variable once we do not know in advance what the outcome will be, if we repeat the experiment multiple times, or we collect observations repeatedly under "similar" conditions, we may start to learn if certain values are more probable to observe than other ones. Each repetition of the random experiment is a **trial**. The outcomes of several trials represent an **event**, which is any subset of the sample space. 
+
+For example, in the case of the discrete random variable: "presence of marine mammal call", we may observe that it way more probable to not observe a marine mammal call. If we collect observations over let's say one-minute windows, we may observe that 1% of the observations have a marine mammal call. We may suspect that the probability of observerving a marine mammal is 0.01. Since in this case we have only two possible outcomes we can completely describe the empirical distribution of this random variable:
+
+$$P(X=\textrm{marine mammal call}) = 0.01$$
+$$P(X=\textrm{no marine mammal call}) = 0.99$$
+
+Note: here we have made some assumptions to simplify the problem:
+
+* we do not discuss the scenario if the call is on the boundary of the window, we assume to have some procedure that determines if there is a whale call is within the window
+* the windows are during different periods of time, and it might be more probable to observe whales at specific times of the day/year. In this case, the trials are not independent. 
+
+
 
 
 
