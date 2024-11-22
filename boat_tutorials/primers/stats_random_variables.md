@@ -27,6 +27,12 @@ Note: here we have made some assumptions to simplify the problem:
 * the windows are during different periods of time, and it might be more probable to observe whales at specific times of the day/year. In this case, the trials are not independent. 
 
 
+Discrete distributions can be defined by specifying the probability of observing each discrete value. We will next discuss the continuous distribution: dB noise level over a window of time. The chance of observing exactly the same real value is almost zero (there will always be small fluctuations), however, certain ranges of values are more probable than others. For example, calm ocean could be around 60-70 dB, stormy ocean around 90 dB, large ship could be around 100 - 120 dB (at 100m distance) ([example sound levels](https://www.arc.id.au/SoundLevels.html)). So while we cannot say what is the probability of a specific value, we can describe the distribution by specifying what is the probability of a specific interval of values (i.e. the probability of certain events). We can describe the distribution empirically, by binning the observed values into small windows, and calculating the number of observations in each bin. This is equivalent to constructing the histogram of an observed sound levels, and if we keep the bin size small we will be able to approximate the probability of any other interval by adding the values of the bins which cover it.  
+
+
+
+
+
 
 
 
