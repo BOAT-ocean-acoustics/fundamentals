@@ -15,7 +15,7 @@ Taking a systems approach to understanding ocean acoustics problems, our learnin
 
 
 (conceptual-overview)=
-## Motivating example: How do we study the lives of orcas?
+## Motivating example: Studying the lives of orcas using sound
 
 <!-- Description of scenarios without using the sonar equation first -->
 
@@ -24,7 +24,6 @@ For both fun and to highlight the interdisciplinary nature of ocean acoustics, w
 Through this example, you will see how the physics of sound, the biology of whales and fish, the ocean environments, and scientific instruments all play a role in this problem.
 
 
-(conceptual-overview-orca)=
 ### How and when do orcas use sound?
 Killer whales are toothed whales (odontocetes) that use sound to communicate with each other and find food in the ocean. There are two types of killer whales living on the west coast of the north American continent: the ["resident" and the "transient"](REF) killer whales.
 
@@ -85,41 +84,66 @@ where:
 
 You may find variations of the sonar equation that include additional terms, such as noise level ($NL$), array gain ($AG$), or directivity index ($DI$), as seen on the [DOSITS](https://dosits.org/science/advanced-topics/sonar-equation/) website. These variations arise from the specific problem setup and the instrumentation used.
 
-In the following tutorial pages, we will break down these key terms above and explore how they are used to understand ocean acoustics problems.
+In the following tutorials, we will break down these key terms above and explore how they are used to understand ocean acoustics problems.
+
+But first, let's see how we can use the SONAR equation to help us break down the complex problem of studying the lives of orcas using sound.
 
 `````{Tip}
 :class: tip
 Discovery of Sound in the Sea (DOSITS) contains a wealth of information about ocean acoustics!
 `````
 
-### Studying the lives of orcas via SONAR equation
 
 
 
-- Sonar equation: RL = SL + 2 TL + TS
-- what are these terms? (conceptual descriptions of each term)
-    - RL: receive level
-    - SL: source level
-    - TL: transmission loss
-        - sound travel takes time, the medium matters (air vs water)
-    - TS: target strength
-- Diagram for the connection between all the components
-- Two examples (with pictures!) consisting of the terms (some are known, some are unknown)
-    1. killer whale hunting for fish
-        - goal of analysis: are these fish salmon or herring?
-        - assumptions: no multipath
-    2. humans use hydrophones to listen for killer whales
-        - goal of analysis: how far are the whales?
-        - assumptions: constant sound speed profile/absorption
-- Goal of analysis
-    - are these fish salmon or herring?
+
+## The lives of orcas through the SONAR equation
+<!-- 
+- How far can killer whales hear each other? How far can we detect them using hydrophones? Does this distance change depending on the type of sound whales emit?
+- How do whales identify different fish species through echolocation? How do echoes change with fish size or when there are multiple fish?
+- What makes a good hydrophone to detect the whales? What key characteristics should we consider?
+-->
+
+We first consider the scenario of Oli trying to communicate with Ola, and examine how different terms in the SONAR equation come into play:
+
+ADD PICTURE
+
+You can see here that $\textrm{SL}$ characterizes how loud Oli is calling, $\textrm{TL}$ describes how much sound energy is "lost" before the sound reaches Ola, and $\textrm{RL}$ represents how loud the sound is when Ola receives. Depending on what the environment Oli and Ola are in, the content of Oli's signal (e.g., spectrum), Ola may or may not be able to hear Oli, or hear clearly what Oli is saying.
+
+For example, if they are in a shallow channel, Oli's sound may bounce around between the sea surface and seafloor ("multipath" propagation) and cause Ola to hear multiple copies of the same sound. It also turns out that Oli's sound may not reach as far in warmer water compared to in colder water. You will learn more about these in the following sections.
+
+<!-- One can imagine that the ambient noise can affect this too. -->
+
+What if we want to predict how far we can detect Oli? It's pretty straightforward: just replace Ola with a hydrophone:
+
+ADD PICTURE
+
+But of course, we need to consider if Ola and the hydrophone receives sound the same way, just like different people may hear the same sound differently.
+
+Now let's consider the scenario where Ola wants to detect and track down a fish. The picture then changes to the following:
+
+ADD PICTURE
+
+In this case, instead of Oli making a sound, now we have Ola's echolocation signal bouncing off the fish, characterized by $\textrm{TS}$. Because the sound now travels both from Ola to the fish, and from the fish to Ola, the amount of sound energy loss doubles, represented by $\textrm{2TL}$. Similarly, depending on the environment Ola is in and the type and number of fish there are, the exact situation may be more complex then what is depicted here. You will also learn more about these in the following sections.
 
 
 
-## What are decibels, and why do we use them?
-- General discussion of decibels
-- How sound “looks” like – find some nice websites (google famous sounds?)
+### Widget exercise
 
+Let's put what we just learn to use! Below is an interactive "widget" that you can use to get an intuitive sense of how loud Oli's sound or fish echoes Ola may receive.
+
+`````{Tip}
+:class: tip
+Throughout the tutorials, we will use widgets to help develop physical intuitions behind ocean acoustics problems.
+`````
+
+Here, all the numbers are represented in **decibels**, or "**dB**," which is a unitless, logarithmic measure widely used in ocean acoustics. We use the this measure in order to easily compare sound as loud as a jet taking off right outside of your window (~140 dB re 20 $\mu$Pa) with sound as soft as dropping a needle on the floor (~15 dB re 20 $\mu$Pa). Go to the [](primer-decibel) page to learn about this useful measure.
+
+ADD_WIDGET:
+- PASSIVE: RETURN RL FROM TL AND SL SLIDEBARS
+- ACTIVE: RETURN RL FROM TL, SL, AND TS SLIDEBARS
+
+**Try this for yourself:** By keeping $\textrm{TL}$ the same, you can see how much harder it is to hear fish echoes compared to Ola's sound, just because the sound needs to travel twice of the distance! Note that $\textrm{TL}$ is also typically a negative number when measured in decibel, which we will explain in [](conceptual-target_strength).
 
 
 
