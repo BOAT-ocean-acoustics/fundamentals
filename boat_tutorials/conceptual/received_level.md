@@ -47,6 +47,8 @@ GOAL IS TO DEVELOP THE INTUITION THAT INCREASING SENSITIVITY (MAKING IT LESS NEG
 
 
 
+
+
 ## What to measure: Quantifying received sound
 
 Once sound signals are captured by hydrophones, how do we quantify what's in the received sound?
@@ -115,19 +117,24 @@ Different from RMS and p2p pressure, EFD is a cumulative measure and is often us
 
 
 
-## What can you measure
-- sensitivity
-    - this is what we want to get from calibration
-- sound pressure level (SPL)
-    - intensity
-    -  [link to decibel page]()
-- RMS, peak-to-peak, energy density flux
-    - show forumlae
-- spectrum
-    - [link to Fourier analysis page]()
-- **widget**:
-    - allow changing signal type, duration, frequency and/or bandwitdh, amplitude
-    - show RMS/p2p/EDF numbers and plot spectrum
+```{Tip}
+:class: tip
+You may already know each signal has a specific frequency content, or "spectrum." The signal spectrum is very important in distinguishing different types of signals and many other applications. Learn more in the [Spectral analysis](conceptual-spectral) tutorial.
+```
+
+
+ADD WIDGET:
+SIGNAL TYPES: IMPULSE, TAPERED SINE WAVE (NO TAPER TO FULLY TAPERED)
+ALLOW CHANGING SINE WAVE LENGTH, AMPLITUDE, TAPERING
+ALLOW CHANGING IMPULSE AMPLITUDE
+PLOT RMS, P2P LEVEL ON THE FIGURE
+SHOW EFD, RMS, P2P NUMBERS AS OUTPUTS
+
+
+<!-- NOTE: LEAVING ANYTHING IN THE FREQ DOMAIN TO SPECTRAL ANALYSIS TUTORIAL -->
+
+
+
 - beamforming:
     - intuition: inducing constructive and destructive interference to "focus" on a particular direction
     - leave details to [deeper level]()
