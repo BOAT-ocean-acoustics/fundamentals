@@ -23,9 +23,9 @@ parts:
     - file: primers/decibel
     - file: primers/time_freq
     - file: primers/linear_system
-    - file: primers/instrument_selection
     - file: primers/stats_outline
     - file: primers/signal_processing_outline
+    - file: primers/instrument_selection
     # - file: primers/linear_system
     # - file: echogram
   # - caption: Jupyter Book templates
