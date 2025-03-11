@@ -21,3 +21,7 @@
     - clipping level
     - sampling rate
     - output data format
+- potential examples
+    - Reson hydrophones and transducers: https://www.teledynemarine.com/products/product-line/hydrophones-and-transducers
+        - TC4013 widely used by marine mammal folks
+    - Simrad transducers: https://www.kongsberg.com/discovery/ocean-science/ocean-science-transducers/
