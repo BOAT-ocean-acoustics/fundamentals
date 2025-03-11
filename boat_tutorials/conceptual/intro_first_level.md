@@ -158,10 +158,10 @@ ADD PICTURE
 
 Try to see if you can figure out the following:
 - Identify the various terms in the SONAR equations in this sketch
-- Identify at least one possible scientific question or application an echosounder can be applied to
+- Identify at least one scientific question or application that can benefit from using an echosounder
 
-### Exercise 2: Apply to your own research interest
-If you have thought of doing research on an ocean acoustics-related topic, what is it? Think of one question you may want to answer or an application you may want to try, and try to see if you can figure out the following:
+### Exercise 2: Apply to your own research
+If you have done or are thinking about doing research on an ocean acoustics-related topic, what is it? Think of one question you may want to answer or an application you may want to try, and try to see if you can figure out the following:
 - Put together a quick sketch of the "system" of your ocean acoustics problem
 - Identify the various terms in the SONAR equations in this sketch
 - Identify at least one component in the sketch or one term in the SONAR equation that you would like to learn more about from the tutorials
@@ -172,11 +172,12 @@ If you have thought of doing research on an ocean acoustics-related topic, what 
 (conceptual-overview-human)=
 ## How are these related to our daily lives?
 
-We will also briefly introduce other examples of how the elements we consider here in ocean acoustics are related to our daily lives.
+Outside of ocean acoustics, how are the elements introduced above relate to our daily lives?
 
+As humans, sound play an important role in how we perceive the world. For example: We can usually tell how heavy the rain is by the sound of raindrops hitting the windows. In a large and empty room, we "hear" the space through echoes of our own voices. Attending a concert or singing in a group can be a deeply emotional experience. Many unsighted people also use sound to navigate, including developing the capability to [echolocate](REF)! 
 
-Even though we do not live in an underwater environment, and as humans we typically rely predominantly on vision to navigate the world, sounds still play an important component of our daily lives. Listening is an important sensory modality for us to understand the environment. For example, we can usually tell how heavy the rain is by the sounds of raindrops hitting the windows; in a large and empty room, we often notice the presence of echoes of the sounds we make. Listening can also bring a powerful and emotional experience, as people who have attended concerts can attest to. In addition, many unsighted humans have also developed the ability to navigate by echolocation, just like the killer whales.
+On a smaller scale and with higher resolution, we apply similar principles in medical ultrasound, a non-invasive diagnostic tool that uses sound waves to image the human body.
 
-As humans, we have also developed technologies that use the same principles as echolocation to probe our environments. For example, we use radar systems, which transmit electromagnetic waves and receive the "echoes" bounced off objects in the air to detect and track airplanes, characterize weather phenomena including cloud cover, rain, snow, etc., and even observing the migration of large herds of birds in the night sky. We also use medical ultrasound to image the interior of human body as a non-invasive diagnostic tool.
+In addition, **radar** (**RA**dio **D**etection **A**nd **R**anging) also operates on the same principles, but uses electromagnetic waves instead of sound for sensing. It is widely used to track airplanes, characterize weather phenomena (e.g., cloud, rain, snow), and even observe the migration of large bird groups in the night sky. 
 
-The principles and elements we will learn from the section about the sonar quation can also be applied in these cases to understand our experiences of listening to sounds in our surrounding environment and these technologies.
+The principles we explore in these tutorials are not just relevant to ocean acoustics: They can also help us understand how we experience sound in our environment and how similar technologies shape our world.
