@@ -1,4 +1,4 @@
-(conceptual)=
+(conceptual-intro)=
 # Conceptual framework
 
 In this set of notebooks, we will develop a solid understanding of how to breakdown an ocean acoustics problem into distinct components that can each be analyzed separately. This approach provides a structured framework that will help us gain a holistic picture of the problem.
@@ -14,7 +14,7 @@ Taking a systems approach to understanding ocean acoustics problems, our learnin
 5. Recognize potential caveats in the measurement, inference, or estimation processes
 
 
-(conceptual-overview)=
+(conceptual-intro_motivation)=
 ## Motivating example: Studying the lives of orcas using sound
 
 <!-- Description of scenarios without using the sonar equation first -->
@@ -59,7 +59,7 @@ Below, we will introduce the mighty "SONAR equation" to help us answer these que
 
 
 
-(conceptual-sonar_equation)=
+(conceptual-intro_sonar_equation)=
 ## The mighty SONAR equation
 
 The Sonar Equation provides a framework for understanding the different components involved in either **pure listening** or **active pinging (echolocation)** using sound. The term **SONAR** stands for **SO**und **N**avigation **A**nd **R**anging.
@@ -96,7 +96,7 @@ Discovery of Sound in the Sea (DOSITS) contains a wealth of information about oc
 
 
 
-
+(conceptual-intro_orca_and_sonar_equation)=
 ## The lives of orcas through the SONAR equation
 <!-- 
 - How far can killer whales hear each other? How far can we detect them using hydrophones? Does this distance change depending on the type of sound whales emit?
@@ -137,6 +137,9 @@ In this case, instead of Oli making a sound, now we have Ola's echolocation sign
 
 
 
+
+
+(conceptual-intro_widgets)=
 ### Widget exercise
 
 Let's put what we just learn to use! Below is an interactive "widget" that you can use to get an intuitive sense of how loud Oli's sound or fish echoes Ola may receive.
@@ -156,6 +159,9 @@ ADD_WIDGET:
 
 
 
+
+
+(conceptual-intro_exercises)=
 ## Apply the SONAR equation to other ocean acoustics problems
 
 Having seen how the SONAR equation can be applied to study the orcas, let's try to apply the same principle to analyze another couple ocean acoustics problems.
@@ -178,7 +184,8 @@ If you have done or are thinking about doing research on an ocean acoustics-rela
 
 
 
-(conceptual-overview-human)=
+
+(conceptual-intro_others)=
 ## How are these related to our daily lives?
 
 Outside of ocean acoustics, how are the elements introduced above relate to our daily lives?
