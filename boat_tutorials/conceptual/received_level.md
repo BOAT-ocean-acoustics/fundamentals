@@ -51,7 +51,7 @@ GOAL IS TO DEVELOP THE INTUITION THAT INCREASING SENSITIVITY (MAKING IT LESS NEG
 
 Once sound signals are captured by hydrophones, how do we quantify what's in the received sound?
 
-One of the commonest measure is the **sound pressure level (SPL)**, which characterizes how intense the sound is. It is usually written as:
+One of the commonest measure is **sound pressure level (SPL)**, which characterizes how intense the sound is and is usually written as:
 
 $\textrm{SPL} = 20 \log{ \frac{P}{P_{ref}} }$
 
@@ -62,19 +62,19 @@ where $P$ is the sound pressure, and $P_{ref}$ is the reference pressure. This i
 The reference pressure is usually 1 µPa in water and 20 µPa in air, which makes a big difference in the resulting SPL values!
 ```
 
-In practice, to calculate the SPL from hydrophone measurement, we often use:
+In practice, to calculate SPL from hydrophone measurement, we often use:
 
 $\textrm{SPL} = 20 \log{ \frac{V}{V_{ref}} } - M$,
 
-where $V$ is the measured voltage, $M$ is the receiving sensitivity. To see how this formula comes about, let's start with the linear domain quantities:
+where $V$ is the measured voltage and $M$ is the receiving sensitivity. To see how this formula comes about, let's start with the linear domain quantities:
 
 $V = P \times m$,
 
-where $m$ is the linear receiving sensitivty (i.e. $M=20 \log{m}$). Dividing both sides by $V_ref$ and multiply the right hand side by $\frac{P_{ref}}{P_{ref}}$,
+where $m$ is the linear receiving sensitivty (i.e. $M=20 \log{m}$). Dividing both sides by $V_{ref}$ and multiply the right hand side by $\frac{P_{ref}}{P_{ref}}$, we get
 
 $\frac{V}{V_{ref}} = \frac{P}{P_{ref}} \times \frac{P_{ref}}{V_{ref}} \times m$.
 
-The equation in the log domain is then
+Taking the equation to the log domain:
 
 $20 \log{ \frac{V}{V_{ref}} } = 20 \log{ \frac{P}{P_{ref}} } + 20 \log{ \frac{m}{ V_{ref} / P_{ref}} }$,
 
@@ -84,11 +84,11 @@ $20 \log{ \frac{V}{V_{ref}} } = \textrm{SPL} + M$,
 
 and hence the above formula.
 
-When there is a gain factor $G$ applied to the voltage signal due by electronics associated with the hydrophone, we have
+When there is a gain factor $G$ applied to the voltage signal by electronics associated with the hydrophone, we have
 
-$\textrm{SPL} = 20 \log{ \frac{V}{V_{ref}} } - M - G$,
+$\textrm{SPL} = 20 \log{ \frac{V}{V_{ref}} } - M - G$.
 
-since to return to the original measured quantity, we need _remove_ (minus) the influence of the gain.
+Here there is a minus sign before $G$, since to return to the original measured quantity, we need _remove_ the influence of the gain.
 
 
 
