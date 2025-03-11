@@ -116,7 +116,11 @@ For example, if they are in a shallow channel, Oli's sound may bounce around bet
 
 What if we want to predict how far we can detect Oli? It's pretty straightforward: just replace Ola with a hydrophone:
 
-<img src="../images/0_intro/orca_hydrophone.jpg" width="600px">
+```{image} ../images/0_intro/orca_hydrophone.jpg
+:width: 600px
+:align: center
+```
+<!-- <img src="../images/0_intro/orca_hydrophone.jpg" width="600px"> -->
 
 But of course, we need to consider if Ola and the hydrophone receives sound the same way, just like different people may hear the same sound differently.
 
