@@ -3,4 +3,21 @@
 - discuss the datasheets for a hydrophone and a transducer
 - topics:
     - sensitivity
-    - 
+        - transmitting, receiving
+    - beampattern:
+        - horizontal, vertical 
+        - mainlobe, sidelobe, backradiation
+    - output level
+    - operating depth
+    - physical dimensions: does it fit on your platform / mount?
+    - weight in air and in water
+    - misc: does it fit on your platform / mount?
+        - connector type
+        - cable length and diameter
+- if digital output or supposed to be used another component
+    - operating software
+    - license
+    - dynamic range
+    - clipping level
+    - sampling rate
+    - output data format
