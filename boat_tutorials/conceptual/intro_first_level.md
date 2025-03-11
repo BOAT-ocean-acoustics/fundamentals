@@ -106,7 +106,7 @@ Discovery of Sound in the Sea (DOSITS) contains a wealth of information about oc
 
 We first consider the scenario of Oli trying to communicate with Ola, and examine how different terms in the SONAR equation come into play:
 
-<img src="../images/0_intro/orca_comms.jpg" width="600">
+<img src="../images/0_intro/orca_comms.jpg" width="600px">
 
 You can see here that $\textrm{SL}$ characterizes how loud Oli is calling, $\textrm{TL}$ describes how much sound energy is "lost" before the sound reaches Ola, and $\textrm{RL}$ represents how loud the sound is when Ola receives. Depending on what the environment Oli and Ola are in, the content of Oli's signal (e.g., spectrum), Ola may or may not be able to hear Oli, or hear clearly what Oli is saying.
 
@@ -116,13 +116,13 @@ For example, if they are in a shallow channel, Oli's sound may bounce around bet
 
 What if we want to predict how far we can detect Oli? It's pretty straightforward: just replace Ola with a hydrophone:
 
-<img src="../images/0_intro/orca_hydrophone.jpg" width="600">
+<img src="../images/0_intro/orca_hydrophone.jpg" width="600px">
 
 But of course, we need to consider if Ola and the hydrophone receives sound the same way, just like different people may hear the same sound differently.
 
 Now let's consider the scenario where Ola wants to detect and track down a fish. The picture then changes to the following:
 
-<img src="../images/0_intro/orca_fish_echo.jpg" width="600">
+<img src="../images/0_intro/orca_fish_echo.jpg" width="600px">
 
 In this case, instead of Oli making a sound, now we have Ola's echolocation signal bouncing off the fish, characterized by $\textrm{TS}$. Because the sound now travels both from Ola to the fish, and from the fish to Ola, the amount of sound energy loss doubles, represented by $\textrm{2TL}$. Similarly, depending on the environment Ola is in and the type and number of fish there are, the exact situation may be more complex then what is depicted here. You will also learn more about these in the following sections.
 
