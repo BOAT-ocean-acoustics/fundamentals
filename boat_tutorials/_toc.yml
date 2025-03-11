@@ -20,9 +20,9 @@ parts:
     - file: in_depth/wave_eq
   - caption: Technical primers  # other important topics
     chapters:
-    - file: primers/decibel
-    - file: primers/time_freq
-    - file: primers/linear_system
+    - file: primers/stats_outline
+    - file: primers/signal_processing_outline
+    # - file: primers/linear_system
     # - file: echogram
   # - caption: Jupyter Book templates
   #   chapters:
