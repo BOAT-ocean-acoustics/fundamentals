@@ -51,7 +51,9 @@ GOAL IS TO DEVELOP THE INTUITION THAT INCREASING SENSITIVITY (MAKING IT LESS NEG
 
 Once sound signals are captured by hydrophones, how do we quantify what's in the received sound?
 
-One of the commonest measure is **sound pressure level (SPL)**, which characterizes how intense the sound is and is usually written as:
+
+### Sound pressure level (SPL)
+One of the commonest measure is **sound pressure level (SPL)**, which characterizes how loud the sound is and is usually written as:
 
 $\textrm{SPL} = 20 \log{ \frac{P}{P_{ref}} }$
 
@@ -91,6 +93,25 @@ $\textrm{SPL} = 20 \log{ \frac{V}{V_{ref}} } - M - G$.
 Here there is a minus sign before $G$, since to return to the original measured quantity, we need _remove_ the influence of the gain.
 
 
+### Sound pressure metrics
+
+However, most sound recordings consist of a series of voltage measurements. How do we choose a point to calculate the SPL, and is that even the right way to do it?
+
+Indeed usually we do not report a single point on a voltage time series, but use a metric or a descriptor. Most metrics are based either directly on sound pressure, or on sound intensity $I$, which is proportional to the square of sound pressure ($I = \frac{P^2}{\rho c}$). Precisely because the goal is to quantify sound received in a time series, you will notice the time period under consideration ($T$) in all of the common metrics below:
+
+- Root mean square (RMS) pressure [unit: Pa]: 
+
+  $P_\textrm{RMS} = \sqrt{ \frac{\int_T P(t)^2 dt}{T} }$
+
+- Peak-to-peak (p2p) pressure [unit: Pa]:
+
+  $P_\textrm{p2p} = P_\textrm{max} - P_\textrm{min}$ during the time period under consideration
+
+- Energy flux density (EFD) [unit: W/m$^2$]:
+  
+  $E = \int_T I(t) dt$
+
+Different from RMS and p2p pressure, EFD is a cumulative measure and is often used to quantify sound energy exposure for marine animals.
 
 
 
