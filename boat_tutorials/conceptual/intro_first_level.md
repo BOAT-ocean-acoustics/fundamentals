@@ -67,24 +67,24 @@ The Sonar Equation provides a framework for understanding the different componen
 In pure listening scenarios, the sonar equation is written as:
 
 $$
-RL = SL - TL,
+\textrm{RL} = \textrm{SL} - \textrm{TL},
 $$
 
 and in the active sensing scenario, it is written as:
 
 $$
-RL = SL - 2 TL + TS
+\textrm{RL} = \textrm{SL} - 2\textrm{TL} + \textrm{TS}
 $$
 
 where:
-- $RL$ denotes receive level, or the strength of the received sound
-- $SL$ denotes source level, or the intensity of the emitted sound
-- $TL$ denotes transmission loss, or the attenuation of sound as it travels
-- $TS$ denotes target strength, or the acoustic reflectivity of the target
+- $\textrm{RL}$ denotes receive level, or the strength of the received sound
+- $\textrm{SL}$ denotes source level, or the intensity of the emitted sound
+- $\textrm{TL}$ denotes transmission loss, or the attenuation of sound as it travels
+- $\textrm{TS}$ denotes target strength, or the acoustic reflectivity of the target
 
-You may find variations of the sonar equation that include additional terms, such as noise level ($NL$), array gain ($AG$), or directivity index ($DI$), as seen on the [DOSITS](https://dosits.org/science/advanced-topics/sonar-equation/) website. These variations arise from the specific problem setup and the instrumentation used.
+You may find variations of the sonar equation that include additional terms, such as noise level ($\textrm{NL}$), array gain ($\textrm{AG}$), or directivity index ($\textrm{DI}$), as seen on the [DOSITS](https://dosits.org/science/advanced-topics/sonar-equation/) website. These variations arise from the specific problem setup and the instrumentation used.
 
-In the following tutorials, we will break down these key terms above and explore how they are used to understand ocean acoustics problems.
+In the following tutorials, we will use the SONAR equation as a guide to explore the key components of an ocean acoustics problem (the "system"), including acoustic sources and receiver (both biological or human-made), sound propagation and scattering (due to biotic or abiotic factors), and applications of signal processing and statistical methods to real-world ocean acoustic data through both conceptual introductions and hands-on exercises.
 
 But first, let's see how we can use the SONAR equation to help us break down the complex problem of studying the lives of orcas using sound.
 
@@ -147,22 +147,30 @@ ADD_WIDGET:
 
 
 
-## How are these related to your own research?
+## Apply the SONAR equation to other ocean acoustics problems
 
-### Exercise
-1. How do we use echosounder to probe the environment?
-    - what are the components in the sonar equation this maps to?
-    - identify at least one possible research question can be answered from echosounder experiment and at least
-    - identify at least one caveat associated with the approach
-2. Mapping your research project onto the sonar equation
-    - discuss which component your work falls into
-    - what are the caveats?
+Having seen how the SONAR equation can be applied to study the orcas, let's try to apply the same principle to analyze another couple ocean acoustics problems.
+
+### Exercise 1: "Looking" under the sea surface using an echosounder
+Echosounder are high-frequency sonar systems widely used to "image" the interior of the ocean. It operates by transmitting signals ("pings") and receiving echo returns from any objects or boundaries underwater. Below is a sketch of how an echosounder measurement scenario looks like:
+
+ADD PICTURE
+
+Try to see if you can figure out the following:
+- Identify the various terms in the SONAR equations in this sketch
+- Identify at least one possible scientific question or application an echosounder can be applied to
+
+### Exercise 2: Apply to your own research interest
+If you have thought of doing research on an ocean acoustics-related topic, what is it? Think of one question you may want to answer or an application you may want to try, and try to see if you can figure out the following:
+- Put together a quick sketch of the "system" of your ocean acoustics problem
+- Identify the various terms in the SONAR equations in this sketch
+- Identify at least one component in the sketch or one term in the SONAR equation that you would like to learn more about from the tutorials
+<!-- - Submit your question [here](LINK): we will periodically answer these on the Ocean Acoustics & Technology forum! -->
 
 
 
 (conceptual-overview-human)=
 ## How are these related to our daily lives?
-
 
 We will also briefly introduce other examples of how the elements we consider here in ocean acoustics are related to our daily lives.
 
