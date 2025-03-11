@@ -1,7 +1,9 @@
 (conceptual-intro)=
 # Conceptual framework
 
-In this set of notebooks, we will develop a solid understanding of how to breakdown an ocean acoustics problem into distinct components that can each be analyzed separately. This approach provides a structured framework that will help us gain a holistic picture of the problem.
+In this tutorial, we will develop a solid understanding of how to breakdown an ocean acoustics problem into distinct components that can each be analyzed separately. This "systems" approach provides a structured framework that will help us gain a holistic picture of the problem.
+
+
 
 
 ## Learning goals
@@ -14,8 +16,10 @@ Taking a systems approach to understanding ocean acoustics problems, our learnin
 5. Recognize potential caveats in the measurement, inference, or estimation processes
 
 
+
+
 (conceptual-intro_motivation)=
-## Motivating example: Studying the lives of orcas using sound
+## Motivating example: The acoustic lives of the orcas
 
 <!-- Description of scenarios without using the sonar equation first -->
 
@@ -38,9 +42,13 @@ Both resident and transient killer whales use a rich repertoire of sounds to com
 ### How do we use ocean acoustics techniques to study orca?
 Given killer whales' extensive use of sound in communication and foraging, we can leverage hydrophones to detect their presence, identify the groups, and infer their activities (e.g., feeding or socializing). As each hydrophone has a limited effective listening range, we can use a network of hydropohones to monitor whales over a larger special area. This is precisely what [Orcasound](https://www.orcasound.net/) is doing in the northeast Pacific Ocean. 
 
+EMBED SPECTROGRAM EXAMPLE WITH SOUND
+LINK TO SPECTRAL ANALYSIS PAGE
 <!-- One can also use multiple closely spaced hydrophones to accurately localize the whales. -->
 
-Scientists attach small electronic "tags" equipped with hydrophones and other sensors to whales. These tags record the sounds whales produce and hear, alongside their movements, offering a perspective from the whale's point of view. For example, an [echogram](REF) like below visually depicts what the whale may be hearing in terms of echoes when closing in on a prey item.
+Scientists attach small electronic "tags" equipped with hydrophones and other sensors to whales. These tags record the sounds whales produce and hear, alongside their movements, offering a perspective from the whale's point of view. For example, an [echogram](REF) like below visually depicts what the whale may be hearing in the echoes when closing in on a prey item.
+
+ADD CLICK ECHOGRAM
 
 Knowing all the above, we can start to ask questions like:
 - How far can killer whales hear each other? How far can we detect them using hydrophones? Does this distance change depending on the type of sound whales emit?
@@ -84,14 +92,14 @@ where:
 
 You may find variations of the sonar equation that include additional terms, such as noise level ($\textrm{NL}$), array gain ($\textrm{AG}$), or directivity index ($\textrm{DI}$), as seen on the [DOSITS](https://dosits.org/science/advanced-topics/sonar-equation/) website. These variations arise from the specific problem setup and the instrumentation used.
 
-In the following tutorials, we will use the SONAR equation as a guide to explore the key components of an ocean acoustics problem (the "system"), including acoustic sources and receiver (both biological or human-made), sound propagation and scattering (due to biotic or abiotic factors), and applications of signal processing and statistical methods to real-world ocean acoustic data through both conceptual introductions and hands-on exercises.
+In the following tutorials, we will use the SONAR equation as a guide to explore key components of an ocean acoustics problem (the "system"), including acoustic sources and receiver (both biological or human-made), sound propagation and scattering (due to biotic or abiotic factors), and applications of signal processing and statistical methods to real-world ocean acoustic data through both conceptual introductions and hands-on exercises.
 
 But first, let's see how we can use the SONAR equation to help us break down the complex problem of studying the lives of orcas using sound.
 
-`````{Tip}
+```{Tip}
 :class: tip
-Discovery of Sound in the Sea (DOSITS) contains a wealth of information about ocean acoustics!
-`````
+Through the tutorials, you will find that each term in the SONAR equation is much more than just a level (intensity) that you see here, but that the SONAR equation remains a useful tool to think about the big picture when you work on an ocean acoustics problem.
+```
 
 
 
@@ -106,6 +114,7 @@ Discovery of Sound in the Sea (DOSITS) contains a wealth of information about oc
 
 We first consider the scenario of Oli trying to communicate with Ola, and examine how different terms in the SONAR equation come into play:
 
+(conceptual-intro_orca_comms)=
 ```{image} ../images/0_intro/orca_comms.jpg
 :width: 600px
 :align: center
@@ -128,6 +137,7 @@ But of course, we need to consider if Ola and the hydrophone receives sound the 
 
 Now let's consider the scenario where Ola wants to detect and track down a fish. The picture then changes to the following:
 
+(conceptual-intro_orca_fish_echo)=
 ```{image} ../images/0_intro/orca_fish_echo.jpg
 :width: 600px
 :align: center
@@ -144,10 +154,10 @@ In this case, instead of Oli making a sound, now we have Ola's echolocation sign
 
 Let's put what we just learn to use! Below is an interactive "widget" that you can use to get an intuitive sense of how loud Oli's sound or fish echoes Ola may receive.
 
-`````{Tip}
+```{Tip}
 :class: tip
 Throughout the tutorials, we will use widgets to help develop physical intuitions behind ocean acoustics problems.
-`````
+```
 
 Here, all the numbers are represented in **decibels**, or "**dB**," which is a unitless, logarithmic measure widely used in ocean acoustics. We use the this measure in order to easily compare sound as loud as a jet taking off right outside of your window (~140 dB re 20 $\mu$Pa) with sound as soft as dropping a needle on the floor (~15 dB re 20 $\mu$Pa). Go to the [](primer-decibel) page to learn about this useful measure.
 
