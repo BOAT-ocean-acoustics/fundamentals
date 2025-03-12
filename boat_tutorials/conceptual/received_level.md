@@ -13,7 +13,11 @@ Receive level (RL) is what we typically measure when trying to listen to the oce
 
     $RL = SL - 2TL + TS$
 
-But, how do we actually capture sound in the ocean and compute the RL? Read on!
+
+
+With RL, we can often tell whether a sound source (such as another whale) is present against a much quieter background. However, since most sound recordings are a time series (a series of high and low voltage measurements) and not a single number, we need to know how to turn that into RL. In addition, there are other informative sound attributes other than the "level" (loudness), such as the temporal pattern and its frequency content. For example, the sound of wind, rain, cracking ice, and various animals are all different. We will dive deeper into these attributes in the [Spectral analysis](conceptual-spectral) tutorial and practice with real-world data during the hands-on exercise sections.
+
+First, let's see how we can actually capture sound in the ocean!
 
 
 <!-- 
@@ -34,6 +38,8 @@ The simplest instrument we can use to capture sound in the ocean is a hydrophone
 :class: note
 Transducers can also convert voltage into pressure and are used as acoustic sources (transmitters), which are discussed in the [Acoustic sources](conceptual-source) tutorial.
 ```
+
+<!-- HERE WE CAN BRING IN AN IN-DEPTH PAGE TALKING ABOUT PIEZOELECTRIC MATERIALS -->
 
 Hydrophones come in all sizes and shapes, but the commonest ones all look like a blob connected with a cable, like those shown below:
 
@@ -163,8 +169,8 @@ We can see this clearly in the scenario (widget) below. Depending where the soun
 
 ADD WIDGET
 - FIX 2 ELEMENTS
-- VARY SOUND FREQUENCY
-- VARY SOUND SOURCE DIRECTION: PLOT ON THE RIGHT AS AN ARROW
+- VARY: SOUND FREQUENCY
+- VARY: SOUND SOURCE DIRECTION: PLOT ON THE RIGHT AS AN ARROW
 - PLOT 2 RECEIVED SIGNALS ON THE LEFT OF ELEMENT
 - PLOT THE SUM OF THE SIGNALS BELOW THE INDIVIDUAL SIGNAL
 - PLOT A VERTICAL GRAPH ON THE RIGHT SHOWING RMS OR PEAK AMPLITUDE VS ANGLE, WITH A POINT INDICATING THE CURRENT SOURCE DIRECTION
@@ -173,6 +179,8 @@ The directionality also changes depending on the number of elements in the compo
 
 ADD WIDGET
 - N ELEMENTS (VARIABLE)
+- VARY: ELEMENT SPACING
+- VARY: FREQUENCY
 - PLOT SOUND SOURCE DIRECTION ON THE RIGHT AS AN ARROW
 - PLOT THE SUM OF THE SIGNALS BELOW THE INDIVIDUAL SIGNAL
 - PLOT A VERTICAL GRAPH ON THE RIGHT SHOWING RMS OR PEAK AMPLITUDE VS ANGLE, WITH A POINT INDICATING THE CURRENT SOURCE DIRECTION
@@ -194,12 +202,6 @@ Now you have the intuition of where receiving directionality comes about and wha
 
 ## The ocean is *not* a quiet place!
 
-
-- beamforming:
-    - intuition: inducing constructive and destructive interference to "focus" on a particular direction
-    - leave details to [deeper level]()
-    - **widget**: linear array
-        - allow changing: number of elements, element spacing, frequency, systematic delay to "steer" the beam
 - sources contributing to soundscape (show example)
     - rain
     - ice cracking
