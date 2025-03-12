@@ -1,10 +1,10 @@
 function R1 = RCoeff(f, theta_i_degrees, cw, cp1, rhoRatio, rhow, alphap1)
 
-deltap1 = alphap1*cp1*log(10)/(40*pi*f);
+deltap1 = alphap1*cp1*log(10)/(40*pi*f); % Convert attenuation to loss parameter
 
-theta_i = theta_i_degrees*pi/180;
+theta_i = theta_i_degrees*pi/180; % Convert from degrees to radians
 
-cpp = cp1./(1 + 1i*deltap1);
+cpp = cp1./(1 + 1i*deltap1); % Complex sound speed
 
 ap = cpp/cw; % ratio of sound speeds
 
