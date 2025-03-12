@@ -6,12 +6,12 @@ root: what_is_boat
 parts:
   - caption: Getting started  # first level
     chapters:
-    - file: conceptual/intro_first_level
+    - file: conceptual/intro
+    - file: conceptual/received_level
     - file: conceptual/source_level
     - file: conceptual/transmission_loss
     - file: conceptual/target_strength
     - file: conceptual/reverberation
-    - file: conceptual/received_level
       # sections:  # break up content into pages
       # - file: review_canonical
       # - file: review_variations
