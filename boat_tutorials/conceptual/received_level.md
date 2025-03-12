@@ -145,17 +145,49 @@ ADD WIDGET:
 
 ## Receiving directionality
 
+<!-- 
+THIS IS NOT QUITE RIGHT BECAUSE THE PINNAES DO NOT HAVE SENSORS ON THEM!
+
 Cats or dogs can turn their ears to capture sound originating from different directions. While most humans cannot move our ears that effectively, our pinnae (outer ears) still provide a similar advantage, such that we typically hear better when facing toward the sound source.
 
 ADD PICTURE OF CAT / DOG / HUMAN EARS
+-->
+
+INSTEAD OF EARS, TALK ABOUT MOST RECEIVERS IN THE PHYSICAL WORLD HAS A SHAPE, SO NOT THE IDEAL RECEIVER WE DISCUSSED BEFORE.
+WITH A SHAPE AND DIMENSION THERE COMES DIRECTIONALITY
+
 
 This phenomenon is known as _directionality_—the ability for a receiver to isolate sound from different directions in order to hear more clearly. Directionality arises because sound waves arriving at different parts of a receiver capture slightly different versions of the same sound. When these signals are combined, they create constructive and destructive interference depending on the sound direction.
 
-To see this clearly, let's consider the situation when we have 2 hydrophone elements
+We can see this clearly in the scenario (widget) below. Depending where the sound comes from and the sound frequency, the signals captured by the 2 receiving elements can differ significantly and impact the amplitude of the summed signals, which is what we would measure from this compounded receiver.
+
+ADD WIDGET
+- FIX 2 ELEMENTS
+- VARY SOUND FREQUENCY
+- VARY SOUND SOURCE DIRECTION: PLOT ON THE RIGHT AS AN ARROW
+- PLOT 2 RECEIVED SIGNALS ON THE LEFT OF ELEMENT
+- PLOT THE SUM OF THE SIGNALS BELOW THE INDIVIDUAL SIGNAL
+- PLOT A VERTICAL GRAPH ON THE RIGHT SHOWING RMS OR PEAK AMPLITUDE VS ANGLE, WITH A POINT INDICATING THE CURRENT SOURCE DIRECTION
+
+The directionality also changes depending on the number of elements in the compounded receiver:
+
+ADD WIDGET
+- N ELEMENTS (VARIABLE)
+- PLOT SOUND SOURCE DIRECTION ON THE RIGHT AS AN ARROW
+- PLOT THE SUM OF THE SIGNALS BELOW THE INDIVIDUAL SIGNAL
+- PLOT A VERTICAL GRAPH ON THE RIGHT SHOWING RMS OR PEAK AMPLITUDE VS ANGLE, WITH A POINT INDICATING THE CURRENT SOURCE DIRECTION
 
 
 
-<!-- NOTE: NOT INCLUDING THE FREQ COMPONENT NOW -->
+<!-- HERE WE CAN EASILY LINK TO IN-DEPTH MATERIALS TO EXPLAIN MORE USING EQUATIONS -->
+
+
+
+```{Tip}
+:class: tip
+Now you have the intuition of where receiving directionality comes about and what happens when the number of receiving elements changes. You will soon see how the same concept applies on [acoustic sources](conceptual-source)!
+```
+
 
 
 
