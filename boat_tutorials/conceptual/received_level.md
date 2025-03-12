@@ -195,21 +195,3 @@ ADD WIDGET
 :class: tip
 Now you have the intuition of where receiving directionality comes about and what happens when the number of receiving elements changes. You will soon see how the same concept applies on [acoustic sources](conceptual-source)!
 ```
-
-
-
-
-
-## The ocean is *not* a quiet place!
-
-- sources contributing to soundscape (show example)
-    - rain
-    - ice cracking
-    - wind, breaking wave
-    - snapping shrimps
-
-
-## Example uses
-- detect target presence
-- distinguish target types
-- understanding propagation environment
