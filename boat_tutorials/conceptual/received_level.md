@@ -59,6 +59,7 @@ ADD WIDGET:
 
 
 
+(conceptual-receiver_time_series)=
 ## How do acoustic signals looks like?
 - bring in the concept of a "time series" and connect with the single value "level" above
 - show waveforms of impulsive and continuously varying sounds
