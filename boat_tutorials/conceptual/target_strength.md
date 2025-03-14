@@ -4,13 +4,17 @@
 In this tutorial, we will look under the hood of the target strength (TS) term in the SONAR equation and examine foundational topics in acoustic scattering.
 
 
-## Introduction
-- intuitively, what is target strength (TS)? 
-    - how much sound energy bounces off (scatters) from a target? 
-absorption
-    - more generally: scattering strength?
-- when/how is it used?
-    - characterize scatterers or scattering sources independent of the complications of the transmit signals ([connec to SL]()) and the propagation environment ([connect to TL]())
+## Target strength
+Intuitively, what is target strength (TS)? It is a measure of the amount of sound energy bouncing off from an object, a surface, or a volume of medium. We often also use the term scattering strength (SS) to refer to the same quantiy, depending on the context.
+
+This quantity is useful, because it characterizes the scatterer or scattering sources independently from all other components in the ocean acoustics "system" that we discussed back in the [](conceptual-intro) section. This allows us to focus on analyzing what happens when sound impinges on something without worrying about how sound gets here and how it was generated initially.
+
+
+
+```{Tip}
+:class: tip
+To learn more about how sound generation and how sound travels in the ocean, check out the [Acoustic propagation](conceptual-propagtion) and [Sound generation](conceptual-source) tutorials.
+```
 
 
 ## Setup and terminology

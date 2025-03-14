@@ -59,6 +59,21 @@ ADD WIDGET:
 
 
 
+## How do acoustic signals looks like?
+- bring in the concept of a "time series" and connect with the single value "level" above
+- show waveforms of impulsive and continuously varying sounds
+- talk about the concept of gating out a short signal section in analysis
+    - potentially using multipath to explain
+- tip: connect to Spectral analysis
+
+ADD WIDGET:
+- VARY: SOUND FREQUENCY
+- PLOT WAVEFORM CHANGES
+- GOAL IS TO SHOW THE INVERSE RELATIONSHIP BETWEEN FREQUENCY AND WAVELENGTH
+
+
+
+
 
 
 ## Quantifying received sound
