@@ -1,17 +1,33 @@
 (conceptual-target_strength)=
-# Target strength
+# Acoustic scattering
+
+In this tutorial, we will look under the hood of the target strength (TS) term in the SONAR equation and examine foundational topics in acoustic scattering.
 
 
-## Introduction
-- intuitively, what is target strength (TS)? 
-    - how much sound energy bounces off (scatters) from a target? 
-absorption
-    - more generally: scattering strength?
-- when/how is it used?
-    - characterize scatterers or scattering sources independent of the complications of the transmit signals ([connec to SL]()) and the propagation environment ([connect to TL]())
+## Target strength
+Intuitively, what is target strength (TS)? It is a measure of the amount of sound ("echo") energy bouncing off from an object (think: a fish), a surface (think: a patch of seafloor), or a volume of medium (think: a chunk of sandy sediment)--these are often called "target(s) of interest." We also very often use the term scattering strength (SS) to refer to the same quantiy, depending on the context.
+
+This quantity is useful, because it characterizes the scatterer or scattering sources independently from all other components in the ocean acoustics "system" that we discussed back in the [](conceptual-intro) section. This allows us to focus on analyzing what happens when sound impinges on something without worrying about [how sound gets there](conceptual-propagtion) and [how it was generated initially](conceptual-source).
+
+Just like what we discussed for RL, sonar echoes are typically a [time series](conceptual-receiver_time_series) and not a single point. Therefore, in analyzing sonar echoes, we often need to figure out _where_ target(s) of interest are in the time series, and use what we know about how different things scatter sounds differently to infer the sources of echoes.
+
+Below, we will start with an introduction of common terminology and dive into various types of scattering sources!
+
+
+
+```{Tip}
+:class: tip
+If you are not familiar with spectrum, check out the [Spectral analysis](conceptual-spectral) tutorial!
+```
+
+
+
 
 
 ## Setup and terminology
+
+
+
 - monostatic vs bistatic ([deeper topic]())
 - extinction cross section (total power removed from the incident sound):
     - total scattering cross section + total absorption cross section
