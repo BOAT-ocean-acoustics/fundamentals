@@ -1,7 +1,7 @@
 (conceptual-receiver)=
-# Acoustic receivers
+# Sound reception
 
-In this tutorial, we will look under the hood of the receive level (RL) term in the SONAR equation.
+In this tutorial, we will use the receive level (RL) term in the SONAR equation as a starting point to discuss foundational concepts in sound reception.
 
 ## Receive level
 Receive level (RL) is what we typically measure when trying to listen to the ocean. This is intuitive, since when looking back at the [acoustic lives of the orcas](conceptual-intro_orca_and_sonar_equation), you see that:

@@ -1,5 +1,7 @@
 (conceptual-target_strength)=
-# Target strength
+# Acoustic scattering
+
+In this tutorial, we will look under the hood of the target strength (TS) term in the SONAR equation and examine foundational topics in acoustic scattering.
 
 
 ## Introduction
