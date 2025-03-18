@@ -4,12 +4,12 @@ SedimentType = "Clayey Silt";
 
 %% Source:
 zSource = 25; % Depth of Source
-f = 10000; % Frequency
+f = 1000; % Frequency
 SourceLevel = 0; % Source level
 rSource = 0;
 
 %% Receiver:
-rRec = 10000; % Receiver Range
+rRec = 100; % Receiver Range
 zRec = 20; % Receiver Depth
 
 %% Propagation calculation using ray theory:
@@ -43,7 +43,7 @@ alphap = 40*pi*f*deltap/(cp*log(10)); % convert from loss parameter to dB/m
 
 k = 2*pi*f/cw; % Wavenumber in water
 
-Nrays = 92; % User can change the number of rays used in the calculation
+Nrays = 10; % User can change the number of rays used in the calculation
 
 % This ray calculation computes groups of 4 rays. So although the user can
 % select any number of rays, the number of rays that the script will
@@ -59,8 +59,8 @@ for jR = 1:NraySets
     % Compute the difference in depth between the receiver and the virtual
     % sources.
     zV(1) = 2*D*(jR-1) + zSource - zRec;
-    zV(2) = 2*D*jR - zSource - zRec;
-    zV(3) = -(2*D*(jR-1) + zSource + zRec);
+    zV(3) = 2*D*jR - zSource - zRec;
+    zV(2) = -(2*D*(jR-1) + zSource + zRec);
     zV(4) = -(2*D*jR - zSource + zRec);
     
     for jV = 1:4
@@ -74,8 +74,8 @@ for jR = 1:NraySets
     end
 
     pV(1) = ((-RC1(1)).^((jR-1))).*exp(1i*k*rV(1))/rV(1); % Pressure for each ray 
-    pV(2) = ((-RC1(2)).^((jR-1))).*RC1(2).*exp(1i*k*rV(2))/rV(2);
-    pV(3) = -((-RC1(3)).^((jR-1))).*exp(1i*k*rV(3))/rV(3);
+    pV(2) = -((-RC1(2)).^((jR-1))).*exp(1i*k*rV(2))/rV(2);
+    pV(3) = ((-RC1(3)).^((jR-1))).*RC1(3).*exp(1i*k*rV(3))/rV(3);
     pV(4) = -((-RC1(4)).^((jR-1))).*RC1(4).*exp(1i*k*rV(4))/rV(4);
  
     %% Determine the ranges where each ray intersects with the surface or seafloor
@@ -87,8 +87,8 @@ for jR = 1:NraySets
   
     % Depths at which this line intersects the images of the seafloor
     L1 = [2*(jR-1):-1:1]*D;
-    L2 = [(2*jR - 1):-1:1]*D;
-    L3 = -[[2*(jR-1):-1:1]*D,0];
+    L3 = [(2*jR - 1):-1:1]*D;
+    L2 = -[[2*(jR-1):-1:1]*D,0];
     L4 = -[[(2*jR - 1):-1:1]*D,0];
 
     % Ranges and depths of the surface and bottom reflections
@@ -96,10 +96,10 @@ for jR = 1:NraySets
     zI1 = repmat([0 D],1,jR-1);
 
     rI2 = (L2 - bV(2))./mV(2);
-    zI2 = [D,repmat([0 D],1,jR-1)];
+    zI2 = [0,repmat([D 0],1,jR-1)];
 
     rI3 = (L3 - bV(3))./mV(3);
-    zI3 = [0,repmat([D 0],1,jR-1)];
+    zI3 = [D,repmat([0 D],1,jR-1)];
 
     rI4 = (L4 - bV(4))./mV(4);
     zI4 = [repmat([D 0],1,jR)];
@@ -143,14 +143,14 @@ a.YLabel.String = 'Depth (m)';
 box on
 
 %% Intensity of each ray:
-figure(2)
-scatter(tVAll(1:Nrays),20*log10(abs(pVAll(1:Nrays)))+SourceLevel,'o','filled')
-
-a1 = gca;
-grid on
-a1.XLabel.String = 'Time (s)';
-a1.YLabel.String = 'Ray Intensity (dB)';
-box on
+% figure(2)
+% scatter(tVAll(1:Nrays),20*log10(abs(pVAll(1:Nrays)))+SourceLevel,'o','filled')
+% 
+% a1 = gca;
+% grid on
+% a1.XLabel.String = 'Time (s)';
+% a1.YLabel.String = 'Ray Intensity (dB)';
+% box on
 
 %% Time Series Calculation:
 dt = (1/f)/10; % time increment for calculation (T/10)
@@ -161,13 +161,13 @@ DefaultTime = [0 maxTime]; % Default for the plots
 % The transmitted pulse is a continous wave signal transmitted for a
 % certain number of periods defined by the variable PulseWidth.
 
-PulseWidth = 8; 
-DisplayTimeStart = 6.65; % Define the time axis of the plots
-DisplayTimeEnd = 6.9;
+PulseWidth = 8; % Number of cycles to transmit in the CW pulse
+DisplayTimeStart = 0; % Define the time axis of the plots: Start Time
+DisplayTimeEnd = 6.9; % End Time
 TimeRange = [DisplayTimeStart DisplayTimeEnd];
 tau = PulseWidth/f; % Time from start to end of the transmitted pulse
 
-% Note that the transmitted pulse is a CW signal with a 100% cosine taper
+% Note that the transmitted pulse is a CW signal with a 20% cosine taper
 % (tukey window). The shading follows the equation, 1 - cos(t/T), where T
 % is the period of the transmitted CW signal.
 
@@ -175,14 +175,16 @@ Output_pulse = 0.*t1;
 
 for jV = 1:Nrays
 
-        Output_pulse = Output_pulse + CW_pulse_propagation(pVAll(jV),t1,tVAll(jV),f,tau);
+        Output_pulse = Output_pulse + CW_pulse_propagation(pVAll(jV),t1,tVAll(jV),f,tau,0.2);
 
 end
 
 %% Plot the pressure time series
 
+intensityCW = 20*log10(abs(sum(pVAll(1:Nrays)))) + SourceLevel;
+
 figure(3)
-plot(t1,Output_pulse.*sqrt(2)*10.^(SourceLevel/20))
+plot(t1,real(Output_pulse).*sqrt(2)*10.^(SourceLevel/20))
 
 a2 = gca;
 a2.XLabel.String = 'Time (s)';
@@ -192,12 +194,17 @@ a2.XLim = TimeRange;
 %% Plot the Intensity Time Series
 
 figure(4)
-plot(t1,20*log10(abs(hilbert(Output_pulse)))+SourceLevel,...
+plot(t1,20*log10(abs(Output_pulse))+SourceLevel,...
     'LineWidth',2)
 
 a3 = gca;
 
-maxIntensity = max(20*log10(abs(hilbert(Output_pulse)))) + SourceLevel;
+maxIntensity = max(20*log10(abs(Output_pulse))) + SourceLevel;
+
+% hold on
+% line([0 t1(end)],intensityCW.*[1 1])
+% hold off
+
 
 a3.YLim = maxIntensity + [-30 5];
 a3.XLim = TimeRange;
