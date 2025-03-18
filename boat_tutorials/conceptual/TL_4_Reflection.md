@@ -4,7 +4,7 @@ In this section, we turn our attention to the ocean boundaries, specifically the
 
 Anytime sounds interacts with a interface between water and some other material, there is the potential to reflect at least some of the sound energy back into the water. For reflection, the sound will obey a very simple rule: The angle at which the sound is reflected from a flat surface is the same as the angle of the incidence sound on the boundary. This the **law of reflection.** This is illustrated below. The flat, horizontal represents the interface while the arrows indicate the direction of the sound wave striking the interface from the left and reflecting to the right. The dashed line represents is a line that is perpendicular or normal to the interface. There are two sets of angle shown. The **incidence angles** are represented by $\theta$ and are defined as the angle between the sound and the perpendicular line. The **grazing angles** are are represented by $\phi$ and are defined as the angle between the sound and the interface itself. Usually you will only want to use one of these two types of angles when dealing with problems in ocean acoustics. The incidence angle is usually used when you are dealing with a system that is looking down such as an echosounder. For long range propagation in the ocean, since most of the sound is traveling horizontally, the grazing angle is typically used. The two types of angles are related, $\phi = 90^\circ - \theta$, so you can easily move back and forth between the two, but usually you want to pick the type that will allow you to consider a range of angles around $0^\circ$. 
 
-![[Reflection.png]]
+![Reflection](../images/Reflection.png)
 
 Depending on which type of angle you use, the law of reflection can be written as $\phi_r = \phi_i$ or $\theta_r = \theta_i$. These angles are all measured relative to the interface. If the interface is slanted, wavy, or has some other shape to it, the angles will be measured relative to surface tangential to the point where the the sound strikes the surface. An example is shown in the right image above. The sound is now incident on a bump in the surface and the incident and reflected angles are defined relatively to the local surface.
 # Reflection from the sea surface
@@ -22,20 +22,23 @@ The table below shows typical sound speeds, densities, and attenuations for thre
 
 | Sediment Type | Sound Speed (m/s) | Density (kg/m$^3$) | Attenuation (dB/m @ 400 kHz) | Attenuation (dB/$\lambda$) |
 | ------------- | ----------------- | ------------------ | ---------------------------- | -------------------------- |
-| Fine Sand     | 1725              | 2051               | 126                          | 0.55                       
-| Silty Mud     | 1473              | 1546               | 14                           | 0.05                       
-| Clayey Silt   | 1554.6            | 1745               | 72                           | 0.27                       
+| Fine Sand     | 1725              | 2051               | 126                          | 0.55                       |
+| Silty Mud     | 1473              | 1546               | 14                           | 0.05                       |
+| Clayey Silt   | 1554.6            | 1745               | 72                           | 0.27                 |
+      
 Comparing these sediment properties to the properties of seawater, you'll notice that while the sediment density is always larger than that of seawater, the sound speed can be lower, as is the case with silty mud. Although our focus here is reflection, we will take a second to talk about transmission and specifically about **Snell's Law** which relates the angle of transmission, $\phi_t$, to the angle of incidence, $\phi_i$, and the ratio of the sound speeds in the water and in the sediment. Mathematically, this is expressed as,
 
 $$ \cos\phi_t = \frac{c_s}{c_p}\cos\phi_t. $$
+
 For a **slow sediment,** one where the sound speed is less than that in the water, this expression tells us that the grazing angle of the transmitted sound is going to greater than that of the incident sound (see the left side of the image below). For a **fast sediment,** where the sound speed is greater than that of water, the transmitted angle will be lower than the incident angle (right side of Fig. XX). For this type of sediment, there is a **critical angle** for the incident sound where the transmission angle becomes zero and no sound propagates into the sediment. For angles smaller than the critical angle, there is again no transmission and the reflection coefficient is very close to 1. 
-![[Sediment Transmission.png]]
+
+![Sediment Transmission](../images/Sediment_Transmission.png)
+
 For a slow sediment, there is always sound transmitted into the seafloor and hence since $R + T = 1$, the reflection will always be below 1. There is a special condition that can occur for slow sediments where the the transmission coefficient can become nearly equal to one. This occurs at what is known as the **angle of intromission**, which depends on both the sound speed and density ratios of the sediment to water. We won't go into the details of how and when this occurs but in the calculation of the reflection coefficient below, we will indicate when it occurs.
 
 As we said earlier, the reflection coefficient for a fluid/fluid interface is straightforward to calculate and while we won't go into details of that calculation, the widget below will allow you to change the sediment parameters and see how the reflection coefficient changes. For this widget, we assume that the sound speed in water is 1500 m/s, the water density is 1000 kg/m$^3$, and frequency is 100 kHz. 
 
-**Placeholder for reflection coefficient code:**
-![[Reflection Widget.png]]
+![Placeholder for reflection coefficient code:](../images/Reflection_Widget.png)
 <!--
 Widget or python code corresponding to the Matlab script, 'TL_WIDGET_Reflection_Coeff.m'
 
@@ -45,4 +48,4 @@ Widget or python code corresponding to the Matlab script, 'TL_WIDGET_Reflection_
 
 In the above discussion, we approximated the seafloor sediment as a fluid. Not only that, but we also assumed that it was infinitely deep. In reality, neither of those assumptions are true. A sand sediment is composed of both sand grains and water, rock is a solid, and mud can be a weird fluid/solid mix. The details of the sediment structure can have an impact both on how travels through the sediment and how it reflects. For example, like water, rock can support a compressional wave, but it can also support a shear wave, where the material moves up and down as opposed to compressing and expanding. This can have a significant impact on the reflection coefficient.  Also, the sediment is usually uniform. There can be layers with different properties, inclusions of other materials, and smooth variations of properties within the same sediment type. All of this is to say that while the fluid approximation can often work well, it isn't always going to work. Beware.  
 
-[[TL_5_Waveguide_Propagation]]
+![Waveguide Propagation](TL_5_Waveguide_Propagation)
