@@ -13,7 +13,7 @@ To see this, will use a simple widget that simulates the sound emitted by either
 
 When the second source is turned on, those rings of pressure remain, but now there is **interference** between the two sound fields. Interference occurs because at each point the total pressure is the sum of the pressures from the the two sources. If the pressures are roughly the same (either both have positive or negative values), the addition leads to larger pressure magnitude. This is called __constructive interference__. When the pressures have opposite signs, the two pressures cancel which leads to **destructive interference.** This is more clearly seen in the intensity plot where the destructive interference is clearly seen in the lines of low intensity which pass between the two sources. 
 
-![Placeholder for multiple sources code](Multiple source widget.png)
+![Placeholder for multiple sources code](../images/Multiple source widget.png)
 <!--
 Widget or python code corresponding to the Matlab script, 'TL_WIDGET_Multiple_Source.m'
 
