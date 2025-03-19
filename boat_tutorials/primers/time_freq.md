@@ -1,3 +1,4 @@
+(conceptual-spectral)=
 # Time-frequency analysis 101
 
 Coming soon!

@@ -6,12 +6,12 @@ root: what_is_boat
 parts:
   - caption: Getting started  # first level
     chapters:
-    - file: conceptual/intro_first_level
+    - file: conceptual/intro
+    - file: conceptual/received_level
     - file: conceptual/source_level
     - file: conceptual/transmission_loss
     - file: conceptual/target_strength
     - file: conceptual/reverberation
-    - file: conceptual/received_level
       # sections:  # break up content into pages
       # - file: review_canonical
       # - file: review_variations
@@ -27,7 +27,13 @@ parts:
       - file: primers/stats_03_parametric_distributions.ipynb
       - file: primers/stats_04_parametric_estimation.ipynb
       - file: primers/stats_05_testing.ipynb
-    - file: primers/signal_processing_outline
+      
+    - file: primers/signal_processing_outline   
+      sections:
+      - file: primers/decibel
+      - file: primers/time_freq
+    
+    - file: primers/instrument_selection
     # - file: primers/linear_system
     # - file: echogram
   # - caption: Jupyter Book templates
