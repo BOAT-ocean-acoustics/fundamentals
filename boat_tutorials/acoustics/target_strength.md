@@ -44,9 +44,30 @@ We want to note here, though, that in the physical world, sometimes it is not po
 
 <!-- CONNECTION TO DEEPER TOPIC: FORGOT WHAT WE WERE THINKING... -->
 
+
+
+
+
 ### Differential scattering cross section
+A useful concept when thinking about how something scatters sound is the differential scattering cross section $\sigma = \sigma(\theta, \phi, f)$, which is a function of the sound frequency $f$ and the angular relationship between the source, the scatter, and the receiver. Here, we define this angular relationship using ($\theta$, $\phi$) defined on the [polar coordinate](REF LINK TO POLAT COORD EXPLANATION).
 
+ADD FIGURE
 
+In many practical cases, we assume that a scatter that is very far from the sound source and  receiver. This allows us to approximate the source, receiver, and scatterer all "point," and both the incident and scattered sounds are plane waves (just like [when we talked about sound reception](acoustics-receiver_plane_wave_approx)) when impinging on the scatterer or when arriving at the receiver, respectively.
+
+This is a powerful assumption, because this allows us to focus our analysis on the target scattering properties and isolate this component from the rest of the [_system_](acoustics-intro) we discussed in the beginning. From here, you can see how the different terms in the [active sonar equation](acoustics-intro_sonar_equation_active) fall into place.
+
+And as you may have already guessed: target strength is indeed related to the differential scattering cross section!
+
+In the general bistatic case:
+
+$TS(\theta, \phi, f) = 10 \log_{10} \frac{ \sigma(\theta, \phi, f) }{ 1 \textrm{m}^2 } $,
+
+whereas in the monostatic case ($\theta=0$ and $\phi=0$), by defining the differential backscattering cross section $\sigma_{bs}(f)=\sigma(0, 0, f)$, we have 
+
+$TS(f) = 10 \log_{10} \frac{ \sigma_{bs}(f) }{ 1 \textrm{m}^2 }$.
+
+Here, the $1 \textrm{m}^2$ term in the denominators above is the _reference unit_ when expressing quantities in decibels, as we have learned before in the [decibel primer](primer-decibel).
 
 
 
