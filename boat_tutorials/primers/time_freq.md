@@ -1,4 +1,4 @@
-(conceptual-spectral)=
+(acoustics-spectral)=
 # Time-frequency analysis 101
 
 Coming soon!
