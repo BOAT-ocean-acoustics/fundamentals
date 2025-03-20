@@ -28,10 +28,11 @@ parts:
       - file: primers/stats_04_parametric_estimation.ipynb
       - file: primers/stats_05_testing.ipynb
       
-    - file: primers/signal_processing_outline   
+    - file: primers/signal_processing_00_outline   
       sections:
-      - file: primers/decibel
-      - file: primers/time_freq
+      - file: primers/signal_processing_01_signals.ipynb
+      - file: primers/signal_processing_02_cross-correlation.ipynb 
+      - file: primers/signal_processing_03_time_freq.ipynb
     
     - file: primers/instrument_selection
     # - file: primers/linear_system
