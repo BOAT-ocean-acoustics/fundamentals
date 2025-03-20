@@ -1,4 +1,4 @@
-(conceptual-propagtion)=
+(acoustics-propagtion)=
 # Transmission loss
 
 ## Free space propagation
