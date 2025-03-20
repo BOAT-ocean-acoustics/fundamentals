@@ -1,7 +1,7 @@
 (conceptual-receiver)=
-# Acoustic receivers
+# Sound reception
 
-In this tutorial, we will look under the hood of the receive level (RL) term in the SONAR equation.
+In this tutorial, we will use the receive level (RL) term in the SONAR equation as a starting point to discuss foundational concepts in sound reception.
 
 ## Receive level
 Receive level (RL) is what we typically measure when trying to listen to the ocean. This is intuitive, since when looking back at the [acoustic lives of the orcas](conceptual-intro_orca_and_sonar_equation), you see that:
@@ -55,6 +55,22 @@ ADD WIDGET:
 - ALLOW CHANGING SENSITIVTY AND INPUT VOLTAGE
 - GOAL IS TO DEVELOP THE INTUITION THAT INCREASING SENSITIVITY (MAKING IT LESS NEGATIVE) WOULD PRODUCE A LARGER VOLTAGE SIGNAL
 
+
+
+
+
+(conceptual-receiver_time_series)=
+## How do acoustic signals looks like?
+- bring in the concept of a "time series" and connect with the single value "level" above
+- show waveforms of impulsive and continuously varying sounds
+- talk about the concept of gating out a short signal section in analysis
+    - potentially using multipath to explain
+- tip: connect to Spectral analysis
+
+ADD WIDGET:
+- VARY: SOUND FREQUENCY
+- PLOT WAVEFORM CHANGES
+- GOAL IS TO SHOW THE INVERSE RELATIONSHIP BETWEEN FREQUENCY AND WAVELENGTH
 
 
 
