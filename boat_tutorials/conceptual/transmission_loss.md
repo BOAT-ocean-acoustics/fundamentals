@@ -1,3 +1,4 @@
+(conceptual-propagtion)=
 # Transmission loss
 
 ## Free space propagation
