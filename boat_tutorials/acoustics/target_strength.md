@@ -49,9 +49,16 @@ We want to note here, though, that in the physical world, sometimes it is not po
 
 
 ### Differential scattering cross section
-A useful concept when thinking about how something scatters sound is the differential scattering cross section $\sigma = \sigma(\theta, \phi, f)$, which is a function of the sound frequency $f$ and the angular relationship between the source, the scatter, and the receiver. Here, we define this angular relationship using ($\theta$, $\phi$) defined on the [polar coordinate](REF LINK TO POLAT COORD EXPLANATION).
+A useful concept when thinking about how something scatters sound is the differential scattering cross section $\sigma = \sigma(\theta_i, \phi_i, \theta_s, \phi_s, f)$, which is a function of the sound frequency $f$, and the angles of the incident and scattering sound, ($\theta_i, \phi_i$) and ($\theta_s, \phi_s$), respectively. 
 
 ADD FIGURE
+
+
+```{Tip}
+:class: tip
+Here, we define angles using the [polar coordinate](REF LINK TO POLAT COORD EXPLANATION) because it is convenient to consider the problem centered around the scatterer.
+```
+
 
 In many practical cases, we assume that a scatter that is very far from the sound source and  receiver. This allows us to approximate the source, receiver, and scatterer all "point," and both the incident and scattered sounds are plane waves (just like [when we talked about sound reception](acoustics-receiver_plane_wave_approx)) when impinging on the scatterer or when arriving at the receiver, respectively.
 
@@ -61,13 +68,32 @@ And as you may have already guessed: target strength is indeed related to the di
 
 In the general bistatic case:
 
-$TS(\theta, \phi, f) = 10 \log_{10} \frac{ \sigma(\theta, \phi, f) }{ 1 \textrm{m}^2 } $,
+$TS(\theta_i, \phi_i, \theta_s, \phi_s, f) = 10 \log_{10} \frac{ \sigma(\theta_i, \phi_i, \theta_s, \phi_s, f) }{ 1 \textrm{m}^2 } $,
 
-whereas in the monostatic case ($\theta=0$ and $\phi=0$), by defining the differential backscattering cross section $\sigma_{bs}(f)=\sigma(0, 0, f)$, we have 
+whereas in the monostatic case, we can define the differential _backscattering_ cross section $\sigma_{bs}$ based on only the incident direction as that also specifies the direction of scattering measurements:
 
-$TS(f) = 10 \log_{10} \frac{ \sigma_{bs}(f) }{ 1 \textrm{m}^2 }$.
+$TS(\theta_i, \phi_i, f) = 10 \log_{10} \frac{ \sigma_{bs}(\theta_i, \phi_i, f) }{ 1 \textrm{m}^2 }$.
 
 Here, the $1 \textrm{m}^2$ term in the denominators above is the _reference unit_ when expressing quantities in decibels, as we have learned before in the [decibel primer](primer-decibel).
+
+
+
+
+
+## Total cross sections
+How do we intuitively understand the unit of the differential scattering cross seciton being $\textrm{m}^2$? It is easier to explain from the perspective of energy.
+
+When sound impinges on a scatterer, part of the sound energy will be scattered as we have been discussing above, and part of the energy will be absorbed. We can quantify the amount of scattered energy by the total acoustic _power_ scattered per unit time $\Pi_{scat}$ and relate it to the incident sound intensity $I_{inc}$ by
+
+$\sigma_{tot} = \Pi_{scat} / I_{inc}$.
+
+Recall that acoustic intensity $I$ has the power carried by sound waves per unit area in a direction perpendicular to the area.
+
+By fixing the sound incident angle, we can compute the total scattering cross section as the sum of differential scattering cross sections across all angles:
+
+$\sigma_{tot} = \int \sigma (\theta_i, \phi_i, \theta_s, \phi_s) d \Omega_s $
+
+From the above, we can easily see that we can compute the total scattering cross section of a scatter by integrating the differential scattering cross section across all scattered directions
 
 
 
