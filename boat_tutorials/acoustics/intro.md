@@ -1,4 +1,4 @@
-(conceptual-intro)=
+(acoustics-intro)=
 # Conceptual framework
 
 In this tutorial, we will develop a solid understanding of how to breakdown an ocean acoustics problem into distinct components that can each be analyzed separately. This "systems" approach provides a structured framework that will help us gain a holistic picture of the problem.
@@ -18,7 +18,7 @@ Taking a systems approach to understanding ocean acoustics problems, our learnin
 
 
 
-(conceptual-intro_motivation)=
+(acoustics-intro_motivation)=
 ## Motivating example: The acoustic lives of the orcas
 
 <!-- Description of scenarios without using the sonar equation first -->
@@ -67,7 +67,7 @@ Below, we will introduce the mighty "SONAR equation" to help us answer these que
 
 
 
-(conceptual-intro_sonar_equation)=
+(acoustics-intro_sonar_equation)=
 ## The mighty SONAR equation
 
 The Sonar Equation provides a framework for understanding the different components involved in either **pure listening** or **active pinging (echolocation)** using sound. The term **SONAR** stands for **SO**und **N**avigation **A**nd **R**anging.
@@ -111,7 +111,7 @@ Through the tutorials, you will find that each term in the SONAR equation is muc
 
 
 
-(conceptual-intro_orca_and_sonar_equation)=
+(acoustics-intro_orca_and_sonar_equation)=
 ## The lives of orcas through the SONAR equation
 <!-- 
 - How far can killer whales hear each other? How far can we detect them using hydrophones? Does this distance change depending on the type of sound whales emit?
@@ -121,7 +121,7 @@ Through the tutorials, you will find that each term in the SONAR equation is muc
 
 We first consider the scenario of Oli trying to communicate with Ola, and examine how different terms in the SONAR equation come into play:
 
-(conceptual-intro_orca_comms)=
+(acoustics-intro_orca_comms)=
 ```{image} ../images/0_intro/orca_comms.jpg
 :width: 600px
 :align: center
@@ -144,7 +144,7 @@ But of course, we need to consider if Ola and the hydrophone receives sound the 
 
 Now let's consider the scenario where Ola wants to detect and track down a fish. The picture then changes to the following:
 
-(conceptual-intro_orca_fish_echo)=
+(acoustics-intro_orca_fish_echo)=
 ```{image} ../images/0_intro/orca_fish_echo.jpg
 :width: 600px
 :align: center
@@ -156,7 +156,7 @@ In this case, instead of Oli making a sound, now we have Ola's echolocation sign
 
 
 
-(conceptual-intro_widgets)=
+(acoustics-intro_widgets)=
 ### Widget exercise
 
 Let's put what we just learn to use! Below is an interactive "widget" that you can use to get an intuitive sense of how loud Oli's sound or fish echoes Ola may receive.
@@ -172,13 +172,13 @@ ADD_WIDGET:
 - PASSIVE: RETURN RL FROM TL AND SL SLIDEBARS
 - ACTIVE: RETURN RL FROM TL, SL, AND TS SLIDEBARS
 
-**Try this for yourself:** By keeping $\textrm{TL}$ the same, you can see how much harder it is to hear fish echoes compared to Ola's sound, just because the sound needs to travel twice of the distance! Note that $\textrm{TL}$ is also typically a negative number when measured in decibel, which we will explain in [](conceptual-target_strength).
+**Try this for yourself:** By keeping $\textrm{TL}$ the same, you can see how much harder it is to hear fish echoes compared to Ola's sound, just because the sound needs to travel twice of the distance! Note that $\textrm{TL}$ is also typically a negative number when measured in decibel, which we will explain in [](acoustics-target_strength).
 
 
 
 
 
-(conceptual-intro_exercises)=
+(acoustics-intro_exercises)=
 ## Apply the SONAR equation to other ocean acoustics problems
 
 Having seen how the SONAR equation can be applied to study the orcas, let's try to apply the same principle to analyze another couple ocean acoustics problems.
@@ -202,7 +202,7 @@ If you have done or are thinking about doing research on an ocean acoustics-rela
 
 
 
-(conceptual-intro_others)=
+(acoustics-intro_others)=
 ## How are these related to our daily lives?
 
 Outside of ocean acoustics, how are the elements introduced above relate to our daily lives?

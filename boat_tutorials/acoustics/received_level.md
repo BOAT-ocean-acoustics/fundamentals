@@ -1,21 +1,21 @@
-(conceptual-receiver)=
+(acoustics-receiver)=
 # Sound reception
 
 In this tutorial, we will use the receive level (RL) term in the SONAR equation as a starting point to discuss foundational concepts in sound reception.
 
 ## Receive level
-Receive level (RL) is what we typically measure when trying to listen to the ocean. This is intuitive, since when looking back at the [acoustic lives of the orcas](conceptual-intro_orca_and_sonar_equation), you see that:
-- RL combines all effects from sound transmission (SL) and propagation through the environment (TL) when Ola is [_purely listening_](conceptual-intro_orca_comms):
+Receive level (RL) is what we typically measure when trying to listen to the ocean. This is intuitive, since when looking back at the [acoustic lives of the orcas](acoustics-intro_orca_and_sonar_equation), you see that:
+- RL combines all effects from sound transmission (SL) and propagation through the environment (TL) when Ola is [_purely listening_](acoustics-intro_orca_comms):
 
     $RL = SL - TL$
 
-- RL combines sound transmission, two-way propagation, and scattering (TS) when Ola is [_pinging and listening_]((conceptual-intro_orca_fish_echo)):
+- RL combines sound transmission, two-way propagation, and scattering (TS) when Ola is [_pinging and listening_]((acoustics-intro_orca_fish_echo)):
 
     $RL = SL - 2TL + TS$
 
 
 
-With RL, we can often tell whether a sound source (such as another whale) is present against a much quieter background. However, since most sound recordings are a time series (a series of high and low voltage measurements) and not a single number, we need to know how to turn that into RL. In addition, there are other informative sound attributes other than the "level" (loudness), such as the temporal pattern and its frequency content. For example, the sound of wind, rain, cracking ice, and various animals are all different. We will dive deeper into these attributes in the [Spectral analysis](conceptual-spectral) tutorial and practice with real-world data during the hands-on exercise sections.
+With RL, we can often tell whether a sound source (such as another whale) is present against a much quieter background. However, since most sound recordings are a time series (a series of high and low voltage measurements) and not a single number, we need to know how to turn that into RL. In addition, there are other informative sound attributes other than the "level" (loudness), such as the temporal pattern and its frequency content. For example, the sound of wind, rain, cracking ice, and various animals are all different. We will dive deeper into these attributes in the [Spectral analysis](acoustics-spectral) tutorial and practice with real-world data during the hands-on exercise sections.
 
 First, let's see how we can actually capture sound in the ocean!
 
@@ -30,13 +30,13 @@ THERE IS NO "TIME" IN THE SONAR EQUATION!
 
 ## Hydrophone and receiving sensitivity 
 
-(conceptual-receiver_hydrophone)=
+(acoustics-receiver_hydrophone)=
 ### Hydrophone
 The simplest instrument we can use to capture sound in the ocean is a hydrophone. Hydrophone is a "transducer" that can convert sound pressure into voltage, which can then be recorded into a computer or a recorder. 
 
 ```{Note}
 :class: note
-Transducers can also convert voltage into pressure and are used as acoustic sources (transmitters), which are discussed in the [Acoustic sources](conceptual-source) tutorial.
+Transducers can also convert voltage into pressure and are used as acoustic sources (transmitters), which are discussed in the [Acoustic sources](acoustics-source) tutorial.
 ```
 
 <!-- HERE WE CAN BRING IN AN IN-DEPTH PAGE TALKING ABOUT PIEZOELECTRIC MATERIALS -->
@@ -47,7 +47,7 @@ ADD HYDROPHONE PICTURES
 
 The "blob" usually is where the transudcer element is located, sometimes with supporting electronics, all encapsulated in polyurethane to protect these elements from the environment.
 
-(conceptual-receiver_receiving_sensitivity)=
+(acoustics-receiver_receiving_sensitivity)=
 ### Receiving sensitivity
 When measuring sound underwater, an important consideration is the _receiving sensitivity_, which characterizes how well the hydrophone can convert sound at different frequencies into voltage signals. Therefore, usually the receiving sensitivty is expressed in values and units like **-180 dB re 1V/µPa**, which means that this hydrophone will produce a voltage of -180 dB re 1V, or $10^{-9}$ V (see [what decibel (dB) means here](primer-decibel)) in response to a sound pressure of 1 micropascal (µPa). The negative value here just means that the conversion factor is a small number. The receiving sensitivity is what we are after when trying to _calibrate_ a hydrophone.
 
@@ -59,7 +59,7 @@ ADD WIDGET:
 
 
 
-(conceptual-receiver_time_series)=
+(acoustics-receiver_time_series)=
 ## How do acoustic signals looks like?
 - bring in the concept of a "time series" and connect with the single value "level" above
 - show waveforms of impulsive and continuously varying sounds
@@ -147,7 +147,7 @@ Different from RMS and p2p pressure, EFD is a cumulative measure and is often us
 
 ```{Tip}
 :class: tip
-You may already know each signal has a specific frequency content, or "spectrum." The signal spectrum is very important in distinguishing different types of signals and many other applications. Learn more in the [Spectral analysis](conceptual-spectral) tutorial.
+You may already know each signal has a specific frequency content, or "spectrum." The signal spectrum is very important in distinguishing different types of signals and many other applications. Learn more in the [Spectral analysis](acoustics-spectral) tutorial.
 ```
 
 
@@ -209,5 +209,5 @@ ADD WIDGET
 
 ```{Tip}
 :class: tip
-Now you have the intuition of where receiving directionality comes about and what happens when the number of receiving elements changes. You will soon see how the same concept applies on [acoustic sources](conceptual-source)!
+Now you have the intuition of where receiving directionality comes about and what happens when the number of receiving elements changes. You will soon see how the same concept applies on [acoustic sources](acoustics-source)!
 ```

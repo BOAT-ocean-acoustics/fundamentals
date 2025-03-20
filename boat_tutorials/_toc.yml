@@ -4,20 +4,17 @@
 format: jb-book
 root: what_is_boat
 parts:
-  - caption: Getting started  # first level
+  - caption: Acoustics  # first level
     chapters:
-    - file: conceptual/intro
-    - file: conceptual/received_level
-    - file: conceptual/source_level
-    - file: conceptual/transmission_loss
-    - file: conceptual/target_strength
-    - file: conceptual/reverberation
+    - file: acoustics/intro
+    - file: acoustics/received_level
+    - file: acoustics/source_level
+    - file: acoustics/transmission_loss
+    - file: acoustics/target_strength
+    - file: acoustics/reverberation
       # sections:  # break up content into pages
       # - file: review_canonical
       # - file: review_variations
-  - caption: In-depth knowledge  # deeper level
-    chapters:
-    - file: in_depth/wave_eq
   - caption: Technical primers  # other important topics
     chapters:
     - file: primers/stats_00_outline
