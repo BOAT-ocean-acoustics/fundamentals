@@ -10,17 +10,17 @@ The tutorials in this book can be executed directly in a Python ennvironment. Fo
 
 ## Get Started! 
 
-1. Login to GitHub and navigate to [https://github.com/BOAT-ocean-acoustics/fundamentals/](https://github.com/BOAT-ocean-acoustics/fundamentals/) and fork the repository under your username.
+**1. Login to GitHub and navigate to [https://github.com/BOAT-ocean-acoustics/fundamentals/](https://github.com/BOAT-ocean-acoustics/fundamentals/) and fork the repository under your username.**
    
 <img width="973" alt="fork" src="https://github.com/user-attachments/assets/e5e33e0a-fb57-4b92-a5db-88f5736caa64" />
 
 ---
-3. In the upper right corner select + and new codespace.
+2. In the upper right corner select + and new codespace.
    
 <img width="1145" alt="new_codespace" src="https://github.com/user-attachments/assets/64f15e47-52df-4c1d-ac95-7952a121aafd" />
 
 ---
-5. Select the tutorial repository and the smallest machine.
+3. Select the tutorial repository and the smallest machine.
    
 <img width="865" alt="codespace_vm" src="https://github.com/user-attachments/assets/c1c4133f-e49e-439a-8635-fc8ec1efaead" />
 
