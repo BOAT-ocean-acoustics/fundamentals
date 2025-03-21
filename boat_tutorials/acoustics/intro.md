@@ -74,12 +74,14 @@ The Sonar Equation provides a framework for understanding the different componen
 
 In pure listening scenarios, the sonar equation is written as:
 
+(acoustics-intro_sonar_equation_passive)=
 $$
 \textrm{RL} = \textrm{SL} - \textrm{TL},
 $$
 
 and in the active sensing scenario, it is written as:
 
+(acoustics-intro_sonar_equation_active)=
 $$
 \textrm{RL} = \textrm{SL} - 2\textrm{TL} + \textrm{TS}
 $$

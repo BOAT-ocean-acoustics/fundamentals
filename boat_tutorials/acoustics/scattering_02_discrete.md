@@ -1,0 +1,22 @@
+## Discrete scatterers
+- what can we infer using these models?
+    - fish/zooplankton abundance
+    - density of suspended sediment ([deeper topic]())
+    - ([connect to inference/estimation page]())
+- point scatterer
+- spheres of different material properties
+    - show TS spectra of rigid, bubble, fluid, elastic ([deeper topic]()), this brings in frequency dependency ([connect to spectrum]())
+    - solve rigid sphere and bubble? -- would that be too much materials?
+    - **widget**: 1D bubble spectra
+        - allow changing material properties (except for elastic), size, frequency range
+    - talk about frequency dependency using the bubble example
+- non-spherical scatterers
+    - show TS spectra for fluid prolate spheroid, this brings in orientation dependency ([connect to SL/beampattern]())
+    - **widget**: fluid prolate spheroid spectra over all angles
+        - allow changing aspect ratio, size, frequency range
+- practical examples:
+    - fish school: assume no bio attenuation, no multiple scattering, no shadowing
+    - echogram with fish vs zooplankton
+    - acoustic color for info content in TS
+    - sidescan (tie to propagation/TL section)
+    - SAS

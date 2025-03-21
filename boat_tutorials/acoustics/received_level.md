@@ -163,6 +163,14 @@ ADD WIDGET:
 
 
 
+(acoustics-receiver_plane_wave_approx)=
+## Plane wave approximation
+
+DISCUSSION PLANE WAVE APPROXIMATION!
+
+
+
+
 
 
 ## Receiving directionality
