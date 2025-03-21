@@ -5,13 +5,13 @@ In this tutorial, we will look under the hood of the target strength (TS) term i
 
 
 ## Target strength
-Intuitively, what is target strength (TS)? It is a measure of the amount of sound ("echo") energy bouncing off from an object (think: a fish), a surface (think: a patch of seafloor), or a volume of medium (think: a chunk of sandy sediment)--these are often called "target(s) of interest." We also very often use the term scattering strength (SS) to refer to the same quantiy, depending on the context.
+What is target strength (TS)? It is a measure of the amount of sound ("echo") energy bouncing off from an object (think: a fish), a surface (think: a patch of seafloor), or a volume of medium (think: a chunk of sandy sediment)--these are often called "target of interest." We also very often use the term scattering strength (SS) to refer to the same quantiy, depending on the context.
 
 This quantity is useful, because it characterizes the scatterer or scattering sources independently from all other components in the ocean acoustics "system" that we discussed back in the [](acoustics-intro) section. This allows us to focus on analyzing what happens when sound impinges on something without worrying about [how sound gets there](acoustics-propagtion) and [how it was generated initially](acoustics-source).
 
-Just like what we discussed for RL, sonar echoes are typically a [time series](acoustics-receiver_time_series) and not a single point. Therefore, in analyzing sonar echoes, we often need to figure out _where_ target(s) of interest are in the time series, and use what we know about how different things scatter sounds differently to infer the sources of echoes.
+Just like what we discussed for RL, sonar echoes are typically a [time series](acoustics-receiver_time_series) and not a single point. Therefore, in analyzing sonar echoes, we often need to figure out _where_ the target(s) of interest are in the time series, and use what we know about the properties of sound scattered by different things to infer the sources of echoes.
 
-Below, we will start with an introduction of common terminology and dive into various types of scattering sources!
+Below, we will start with an introduction of the setup and some terminology, then dive into various types of scattering sources!
 
 
 
@@ -24,7 +24,7 @@ If you are not familiar with spectrum, check out the [Spectral analysis](acousti
 
 
 
-## Terminology
+## Setup and terminology
 
 When it comes to studying acoustic scattering, there are many terms that could be confusing. We introduce some of them here.
 
@@ -38,7 +38,7 @@ ADD PICTURE OF ECHOSOUNDER PINGING
 
 "Bistatic" means that the transmitter and receiver are located separately at different places. This is typically seen in problems involving a much larger spatial context, such as when we are interested in measuring how sound interacts with the seafloor and sea surface before reaching a receiver very far away from the transmitter. As you can see, the direction of the scatterered signals does not have to be in a specific direction with respect to the transmitted sound.
 
-ADD PICTURE OF ECHOSOUNDER PINGING
+ADD PICTURE OF BISTATIC SETUP
 
 We want to note here, though, that in the physical world, sometimes it is not possible to use the same transducer to transmit sound and receive echoes. In these cases, researchers often put the transmitter and receiver as close as possible  side-by-side, to _approximate_ the monostatic setup. The quality of this approximation depends on the sound frequency and scatterer size, as we shall see below.
 
@@ -84,7 +84,7 @@ Here, the $1 \textrm{m}^2$ term in the denominators above is the _reference unit
 
 
 
-## Total cross sections
+### Total cross sections
 How do we intuitively understand the unit of the differential scattering cross seciton being $\textrm{m}^2$? It is easier to explain from the perspective of energy.
 
 When sound impinges on a scatterer, part of the acoustic energy is scattered, and part of the energy is absorbed. We can quantify the incident sound energy using the acoustics intensity $I$, which is the power carried by sound waves per unit area in a direciton perpendicular to the area. By thinking of the scatterer as intercepting the incident sound energy, it makes intuitive sense to consider the total acoustic power it absorbs ($\Pi_{abs}$) and the total acoustic power it scatters in all directions ($\Pi_{scat}$). We can therefore define the _total absorption cross section_ as 
@@ -100,7 +100,8 @@ $$
 $$
 
 which can also be expressed as the integral of differential scattering cross sections across all angles.
-<!-- 
+
+<!-- SEEMS GOOD TO REMOVE THESE DETAILS 
 given a fixed incident angle $(\theta_i, \phi_i)$.
 $$
 \sigma_{scat} = \int \sigma(\theta_i, \phi_i, \theta_s, \phi_s) \, d\Omega_s
