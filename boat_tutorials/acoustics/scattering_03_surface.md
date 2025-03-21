@@ -1,3 +1,4 @@
+(acoustics-scattering_surface)=
 ## Surface scattering
 - what can we infer using these models?
     - seabed composition
