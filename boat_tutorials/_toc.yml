@@ -17,6 +17,7 @@ parts:
       # - file: review_variations
   - caption: Technical primers  # other important topics
     chapters:
+    - file: primers/codespaces
     - file: primers/stats_00_outline
       sections: 
       - file: primers/stats_01_random_variables.md
