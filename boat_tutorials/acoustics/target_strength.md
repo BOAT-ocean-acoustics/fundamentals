@@ -117,6 +117,10 @@ $$
 
 
 
+### Diving into different scattering sources
+
+Now that we know where TS comes from and how it connects with different quantities in a scattering problem, in the next few sections let's take a look how different things scatter sound, and how we can use these properties in ocean sensing.
+
 
 
 
