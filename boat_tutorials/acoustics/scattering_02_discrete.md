@@ -13,11 +13,11 @@ We call something a "discrete" scatterer when we consider their scattering respo
 (acoustics-scattering_discrete_why)=
 ### Point scatterer
 
-The simplest discrete scatterer model is a "point" scatterer, which is very small and can be thought of as a new sound source that radiates sound after it is excited by the incident waves. This is nice, because we can immdiately apply many concepts we have learned about [acoustic sources](acoustics-source) here.
+The simplest discrete scatterer model is a "point" scatterer, which is very small and can be thought of as a new sound source that radiates sound after it is excited by the incident waves. This is nice, because we can immdiately apply many concepts we have learned about the [acoustic sources](acoustics-source) here.
 
-We often assume a point scatterer to be _omnidirectional_ in its scattering properties, meaning that when impinged by sound, it would scatter echoes equally in all directions. This means that regardless of the directions of the source and the receiver, the echo would always be the same.
+We often assume a point scatterer to be _omnidirectional_, meaning that when impinged by sound, it would scatter echoes equally in all directions. This means that regardless of the directions of the source and the receiver, the echo would always be the same.
 
-For example, we can have an _omnidirectional_ point scatterer, which, when impinges by an incident sound, scatters echoes equally in all directions. This means that regardless of the directions of the source and the receiver, the echo would always be the same. Of course, in natural world, most objects scatter sound differently depending on the direction of the incident sound and the direction of the receiver. We can model them as _directional_ point scatterer, just like how we consider sources with different directional characteristics.
+But of course, in the natural world, most objects scatter sounds differently depending on the direciton of the incident sound and its relative location with respective to the receiver. Therefore, we can model a _directional_ point scatterer, just like how we consider sources with different directional characteristics.
 
 
 
