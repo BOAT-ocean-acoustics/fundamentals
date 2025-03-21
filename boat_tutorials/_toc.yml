@@ -10,7 +10,12 @@ parts:
     - file: acoustics/received_level
     - file: acoustics/source_level
     - file: acoustics/transmission_loss
-    - file: acoustics/target_strength
+    - file: acoustics/scattering_00_intro
+      sections: 
+      - file: acoustics/scattering_01_setup
+      - file: acoustics/scattering_02_discrete
+      - file: acoustics/scattering_03_surface
+      - file: acoustics/scattering_04_volume
     - file: acoustics/reverberation
       # sections:  # break up content into pages
       # - file: review_canonical
