@@ -56,7 +56,7 @@ ADD FIGURE
 
 ```{Tip}
 :class: tip
-Here, we define angles using the [polar coordinate](REF LINK TO POLAT COORD EXPLANATION) because it is convenient to consider the problem centered around the scatterer.
+Here, we define angles using the [polar coordinate](REF LINK TO POLAT COORD EXPLANATION) because it is convenient to consider the problem centered at the scatterer.
 ```
 
 
@@ -68,11 +68,15 @@ And as you may have already guessed: target strength is indeed related to the di
 
 In the general bistatic case:
 
-$TS(\theta_i, \phi_i, \theta_s, \phi_s, f) = 10 \log_{10} \frac{ \sigma(\theta_i, \phi_i, \theta_s, \phi_s, f) }{ 1 \textrm{m}^2 } $,
+$$
+TS(\theta_i, \phi_i, \theta_s, \phi_s, f) = 10 \log_{10} \frac{ \sigma(\theta_i, \phi_i, \theta_s, \phi_s, f) }{ 1 \textrm{m}^2 }
+$$
 
-whereas in the monostatic case, we can define the differential _backscattering_ cross section $\sigma_{bs}$ based on only the incident direction as that also specifies the direction of scattering measurements:
+whereas in the monostatic case, we can define the differential _backscattering_ cross section $\sigma_{bs}$ based on only the incident direction, as it also specifies the receiver direction:
 
-$TS(\theta_i, \phi_i, f) = 10 \log_{10} \frac{ \sigma_{bs}(\theta_i, \phi_i, f) }{ 1 \textrm{m}^2 }$.
+$$
+TS(\theta_i, \phi_i, f) = 10 \log_{10} \frac{ \sigma_{bs}(\theta_i, \phi_i, f) }{ 1 \textrm{m}^2 }
+$$
 
 Here, the $1 \textrm{m}^2$ term in the denominators above is the _reference unit_ when expressing quantities in decibels, as we have learned before in the [decibel primer](primer-decibel).
 
@@ -83,47 +87,36 @@ Here, the $1 \textrm{m}^2$ term in the denominators above is the _reference unit
 ## Total cross sections
 How do we intuitively understand the unit of the differential scattering cross seciton being $\textrm{m}^2$? It is easier to explain from the perspective of energy.
 
-When sound impinges on a scatterer, part of the sound energy will be scattered as we have been discussing above, and part of the energy will be absorbed. We can quantify the amount of scattered energy by the total acoustic _power_ scattered per unit time $\Pi_{scat}$ and relate it to the incident sound intensity $I_{inc}$ by
+When sound impinges on a scatterer, part of the acoustic energy is scattered, and part of the energy is absorbed. We can quantify the incident sound energy using the acoustics intensity $I$, which is the power carried by sound waves per unit area in a direciton perpendicular to the area. By thinking of the scatterer as intercepting the incident sound energy, it makes intuitive sense to consider the total acoustic power it absorbs ($\Pi_{abs}$) and the total acoustic power it scatters in all directions ($\Pi_{scat}$). We can therefore define the _total absorption cross section_ as 
 
-$\sigma_{tot} = \Pi_{scat} / I_{inc}$.
+$$
+\sigma_{abs} = \frac{ \Pi_{abs} }{ I_{inc} }
+$$
 
-Recall that acoustic intensity $I$ has the power carried by sound waves per unit area in a direction perpendicular to the area.
+and the _total scattering cross section_ as
 
-By fixing the sound incident angle, we can compute the total scattering cross section as the sum of differential scattering cross sections across all angles:
+$$
+\sigma_{scat} = \frac{ \Pi_{scat} }{ I_{inc} }
+$$
 
-$\sigma_{tot} = \int \sigma (\theta_i, \phi_i, \theta_s, \phi_s) d \Omega_s $
+which can also be expressed as the integral of differential scattering cross sections across all angles.
+<!-- 
+given a fixed incident angle $(\theta_i, \phi_i)$.
+$$
+\sigma_{scat} = \int \sigma(\theta_i, \phi_i, \theta_s, \phi_s) \, d\Omega_s
+$$
+-->
 
-From the above, we can easily see that we can compute the total scattering cross section of a scatter by integrating the differential scattering cross section across all scattered directions
+The total power removed from the incident sound $\Pi_{abs} + \Pi_{scat}$ can then be used to define the _extinction cross section_
 
-
-
-
-
-### Extinction cross section
-
-In addition to scattering, absorption by the target(s) is another way energy can be removed from the incident sound. It is easier to think about it from the perspective of acoustic power $\Pi$ [unit: W, or Watt], which is the total acoustic energy transmitted or scattered (reflected) by a source or scatterer per unit time. 
-
-
-
-We characterize the total amount of power removed by the **total extinction cross section** $\sigma_e$ by 
-
-$\sigma_e = \sigma_s + \sigma_a $,
-
-where $\sigma_s$ is the total scattering cross section and $\sigma_a$ is the total scattering cross section.
-
-These quantities are called cross sections, because they have units
+$$
+\sigma_e =  \frac{ \Pi_{abs} + \Pi_{scat} }{ I_{inc} } = \sigma_{abs} + \sigma_{scat}
+$$
 
 
 
-### Differential scattering cross section
 
 
-- extinction cross section (total power removed from the incident sound):
-    - total scattering cross section + total absorption cross section
-- total scattering cross section
-  - add intuitive example: shooting pellets to a sphere, what bounces away is related to the concept of "cross section"
-  - explain carefully that this is a conceptual example and that is not all it is
-- differential scattering cross section --> TS ([connect to decibel page]())
 
 
 ## Discrete scatterers
