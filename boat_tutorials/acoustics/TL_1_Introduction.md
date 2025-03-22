@@ -1,5 +1,7 @@
 
-# Introduction
+# Propagation
+
+## Introduction
 
 Unlike the vacuum of space or the air of our atmosphere, light does not travel very far in the underwater environment. It is strongly absorbed by the water molecules themselves and scattered by suspended particles and material in the water column. In a crystal clear lake, you might be able to see out 200 feet (60 m) but usually it is much less. Sound, on the other hand, can travel much, much further. Sound is a traveling wave of compression and rarefaction of the water itself. While the water molecules will also absorb some of it's energy, this absorption is weak as compared to light and in fact, low frequency sound in the ocean can travel half way around the world. It could go further if not for the continents that tend to get in the way. 
 
