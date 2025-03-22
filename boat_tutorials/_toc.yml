@@ -4,18 +4,22 @@
 format: jb-book
 root: what_is_boat
 parts:
-  - caption: Acoustics  # first level
+  # ACOUSTICS
+  - caption: Acoustics
     chapters:
     - file: acoustics/intro
+    # sound reception
     - file: acoustics/RL_00_intro
       sections: 
       - file: acoustics/RL_01_time_series
       - file: acoustics/RL_02_sensitivity
       - file: acoustics/RL_03_directionality
+    # acoustic sources
     - file: acoustics/SL_1_Introduction
       sections:
         - file: acoustics/SL_2_beampattern.ipynb
         - file: acoustics/SL_3_Near_Field_and_Source_Level.ipynb
+    # propagation
     - file: acoustics/TL_1_Introduction
       sections:
         - file: acoustics/TL_2_Free_Space.ipynb
@@ -24,17 +28,15 @@ parts:
         - file: acoustics/TL_5_Near_Surface_Propagation.ipynb
         - file: acoustics/TL_6_Ocean_Waveguide_Propagation.ipynb
         - file: acoustics/TL_7_Transmission_Loss
-    - file: acoustics/scattering_00_intro
+    # scattering
+    - file: acoustics/TS_00_intro
       sections: 
-      - file: acoustics/scattering_01_setup
-      - file: acoustics/scattering_02_discrete
-      - file: acoustics/scattering_03_surface
-      - file: acoustics/scattering_04_volume
-    - file: acoustics/reverberation
-      # sections:  # break up content into pages
-      # - file: review_canonical
-      # - file: review_variations
-  - caption: Technical primers  # other important topics
+      - file: acoustics/TS_01_setup
+      - file: acoustics/TS_02_discrete
+      - file: acoustics/TS_03_surface
+      - file: acoustics/TS_04_volume
+  # TECHNICAL PRIMER
+  - caption: Technical primers  
     chapters:
     - file: primers/stats_00_outline
       sections: 
