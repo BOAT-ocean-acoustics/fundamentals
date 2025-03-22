@@ -29,12 +29,13 @@ But of course, in the natural world, most objects scatter sounds differently dep
 
 ### Scattering regimes
 
-As we have seen in the [acoustic sources](acoustics-source) tutorial, when we talk about the _size_ of the scatterer, we are really talking about the _relative size_ of the scatterer compare to the acoustic wavelength. In acoustics, we often use $ka$, a _dimensionless_ number, to quantify this. Here, $k=2\pi/\lambda$ is the acoustic wavenumber, and $a$ is the _characteristic dimension_ of the scatterer, such as the diameter of a sphere or the length of a cylinder. $ka$ is _dimensionless_, because both $\lambda$ and $a$ are length measures.
+As we have seen in the [acoustic sources](acoustics-source) tutorial, when we talk about the _size_ of the scatterer, we are really talking about the _relative size_ of the scatterer compare to the acoustic wavelength. In acoustics, we often use $ka$, a _dimensionless_ number, to quantify this. Here, $k=2\pi/\lambda$ is the acoustic wavenumber, and $a$ is the _characteristic dimension_ of the scatterer, such as the diameter of a sphere or the length of a cylinder. $ka$ is _dimensionless_, because both $\lambda$ and $a$ are length measures. This allows us to easily compare the echo reponse of a large scatterer at low frquency and a small scatterer at high frequency, not based on the absolute values of the scatterer size or the sound frequency, but by $ka$.
 
-When the acoustic wavelength is very large compared to the scatterer ($ka\ll1$), we call this the "Rayleigh" scattering regime, in which the scattering is dominated by diffraction. On the other extreme, when the acoustic wavelength is small compared to the scatterer ($ka\gg1$), we call this the "geometric" regime, in which the scattering is dominated by reflection.
+When the acoustic wavelength is very large compared to the scatterer ($ka\ll1$), we call this the "Rayleigh" scattering regime, in which the scattering is dominated by diffraction. On the other extreme, when the acoustic wavelength is small compared to the scatterer ($ka\gg1$), we call this the "geometric" regime, in which the scattering is dominated by reflection. In the Rayleigh regime, the exact shape of the scatterer is often not as critical, and the scattering cross section scales with frequency with a steep slope proportional to $(ka)^4$, whereas in the geometric regime, the scattering cross section often varies around a high-frequency limit. This relative stability of scattering strength across frequency is useful for calibrating instruments. For example, below is the TS spectrum of a solid tungston carbide sphere typically used to calibrate a 38 kHz echosounder system.
+
 
 ADD FIGURE
-TS SPECTRUM FOR RIGID SPHERE SHOWNIG THE FREQUENCY DEPENDENCY
+TS SPECTRUM FOR CALIBRATION SPHERE SHOWING FREQUENCY DEPENDENCY
 
 
 
@@ -67,7 +68,8 @@ ADD WIDGET
 - OBSERVE CHANGE OF SPECTRAL RIPPLES DUE TO SPHERE SIZE CHANGE
 
 
-In practice, how do we apply these concepts to interpret echo data? Even though perfect geometrical shapes like spheres or spheroids are rare in nature, they are often pretty good approximations to many discrete scatterers in the ocean. For example, we can model the fish swimbladder as an air-filled sphere or spheroid, and model a krill as an fluid spheroid or cylinder. By observing how the echo spectrum changes across frequency, we can make inference about the type of animals that produced the echoes.
+In practice, how do we apply these concepts to interpret echo data? Even though simple geometrical shapes like spheres or spheroids are rare in nature, they are often pretty good approximations to many discrete scatterers in the ocean. For example, we can model the fish swimbladder as an air-filled sphere or spheroid, and model a krill as an fluid spheroid or cylinder. By observing how the echo spectrum changes across frequency, we can make inference about the type of animals that produced the echoes.
+
 
 
 
