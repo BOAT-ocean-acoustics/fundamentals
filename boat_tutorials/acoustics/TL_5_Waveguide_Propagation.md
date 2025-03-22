@@ -43,5 +43,3 @@ Widget or python code corresponding to the Matlab script, 'TL_WIDGET_Propagation
 As before, if the pulse is short, high frequency, and near the source, the individual arrivals coming in along the different paths can be clearly discerned. As the frequency is decreased and the pulse is lengthened, the individual paths interfere. If enough rays are added, the contributes smooth out to a steady level. 
 
 A more realistic ocean environment could include a depth-dependent sound speed in the water column, range-dependence to the bathymetry of the seafloor, changes in the seafloor properties as a function of range and depth, etc. With a more complicated environment comes the need for more involved computational methods to model the acoustic field. Future notebooks will explore these methods and provide examples.
-
-[Transmission Loss](TL_6_Transmission_Loss)

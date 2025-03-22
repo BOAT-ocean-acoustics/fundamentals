@@ -21,4 +21,4 @@ Widget or python code corresponding to the Matlab script, 'TL_WIDGET_Multiple_So
 
 One other useful and somewhat artificial construct that we will often use is the **plane wave.** While the point source generates a sound field with spherical wavefronts, the plane wave is a sound wave that has a constant pressure level in two, orthogonal directions. For example, if a plane wave is propagating in a direction perpendicular to your computer screen, the pressure at any point on your screen (or even extending off or above your screen into the distance) will have the same pressure. 
 
-[Impact of Water Properties](TL_3_Impact_of_Water_Properties)
+

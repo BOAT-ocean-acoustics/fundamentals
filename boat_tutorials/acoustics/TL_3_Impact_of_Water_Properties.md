@@ -27,5 +27,3 @@ Below is a plot of the absorption coefficient in dB/m versus frequency for fresh
 ![absorption](../images/absorption.png)
 
 Returning to the SOFAR channel, the absorption experienced when sound propagates in seawater means that high frequency sound won't travel very far no matter how well it is trapped in the channel. Due to the strong frequency dependence of the absorption, low frequency sound can travel long distances with much loss. A 100 Hz tone transmitted in the SOFAR channel can travel 2000 km before it losses 3 dB (a 50% reduction) to absorption.
-
-[Reflection](TL_4_Reflection)
