@@ -27,13 +27,63 @@ But of course, in the natural world, most objects scatter sounds differently dep
 
 
 
-### Scattering of spheres
+### Scattering regimes
 
-Spheres are nice first examples when studying scattering problems, because the spherical shape is a good approximation of many discrete scatterers in the ocean, and the symmetrical geometry allows us to focus on many fundamental properties related to scatterer size and material properties, before considering the potential complication of the exact scatterer shape.
+As we have seen in the [acoustic sources](acoustics-source) tutorial, when we talk about the _size_ of the scatterer, we are really talking about the _relative size_ of the scatterer compare to the acoustic wavelength. In acoustics, we often use $ka$, a _dimensionless_ number, to quantify this. Here, $k=2\pi/\lambda$ is the acoustic wavenumber, and $a$ is the _characteristic dimension_ of the scatterer, such as the diameter of a sphere or the length of a cylinder. $ka$ is _dimensionless_, because both $\lambda$ and $a$ are length measures.
 
-As we have seen before in the [sound reception](REF) tutorial, when we talk about the _size_ of the scatterer, we are really talking about the _relative size_ of the scatterer compare to the acoustic wavelength. We often use a _dimensionless_ number, $ka$, to quantify this, where $k=2\pi/\lambda$ is the acoustic wavenumber, and $a$ is the characteristic dimension of the scatterer. $ka$ is a _dimensionless_ measure, because both $\lambda$ and $a$ are length measures
+When the acoustic wavelength is very large compared to the scatterer ($ka\ll1$), we call this the "Rayleigh" scattering regime, in which the scattering is dominated by diffraction. On the other extreme, when the acoustic wavelength is small compared to the scatterer ($ka\gg1$), we call this the "geometric" regime, in which the scattering is dominated by reflection.
+
+ADD FIGURE
+TS SPECTRUM FOR RIGID SPHERE SHOWNIG THE FREQUENCY DEPENDENCY
 
 
+
+
+
+### Scatterer material properties
+
+Scattering phenomena can be complex and depend on the material properties and shape of the object. For example, bubbles or objects that include gas in its composition can _resonante_ in the $ka\ll1$ region, producing scattering signals much stronger than similarly sized objects without gas. When the object is made of materials very similar to the surrounding water medium, sound can easily transmit and reflet through the object, causing interference that can also be in the spectrum.
+
+Below you can see the TS spectrum from a sphere of the same size but with different material compositions: dense metal, fluid (jelly-like), and air (bubble):
+
+
+ADD FIGURE
+TS SPECTRUM FOR 3 SPHERE TYPES OF THE SAME SIZE
+
+
+To get an intuitive feel of how the echoes change depending on the scatterer, try the two widgets below and see how the TS magnitude and spectral features change depending on the size of the scatterer.
+
+**Bubble**
+ADD WIDGET
+- VARY: BUBBLE RADIUS
+- PLOT: TS SPECTRUM
+- OBSERVE CHANGE OF RESONANCE FREQUENCY DUE TO BUBBLE SIZE CHANGE
+
+
+**Fluid sphere**
+ADD WIDGET
+- VARY: SPHERE RADIUS
+- PLOT: TS SPECTRUM
+- OBSERVE CHANGE OF SPECTRAL RIPPLES DUE TO SPHERE SIZE CHANGE
+
+
+
+<!-- Spheres are nice first examples when studying scattering problems, because the spherical shape is a good approximation of many discrete scatterers in the ocean, and the symmetrical geometry allows us to focus on many fundamental properties related to scatterer size and material properties, before considering the potential complication of the exact scatterer shape. -->
+
+
+
+
+
+### Orientation dependence
+
+
+small - large ka
+
+jump into widgets:
+- fluid size
+- bubble size
+
+play with the widget to answer something
 
 
 
