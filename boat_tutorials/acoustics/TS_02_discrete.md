@@ -10,6 +10,8 @@ We call something a "discrete" scatterer when we consider their scattering respo
 
 Furthermore, once we know how different types of objects scatterer sound, we can use that knowledge to interpret the echo signals we receive and infer the potential scattering sources. In cases when we already know or are very confident of what the scatterers are, we can even go one step further, to estimate scatterer properties, such as their size, shape, or material composition based on the spectral, temporal, or other features of the echoes.
 
+For simplicity, in this section we will focus on discussing echoes in the backscattering direction in the [monostatic](acoustics-scattering_monostatic_bistatic) scenario.
+
 
 
 
@@ -27,9 +29,10 @@ But of course, in the natural world, most objects scatter sounds differently dep
 
 
 
+(acoustics-scattering_discrete_regimes)=
 ### Scattering regimes
 
-As we have seen in the [acoustic sources](acoustics-source) tutorial, when we talk about the _size_ of the scatterer, we are really talking about the _relative size_ of the scatterer compare to the acoustic wavelength. In acoustics, we often use $ka$, a _dimensionless_ number, to quantify this. Here, $k=2\pi/\lambda$ is the acoustic wavenumber, and $a$ is the _characteristic dimension_ of the scatterer, such as the diameter of a sphere or the length of a cylinder. $ka$ is _dimensionless_, because both $\lambda$ and $a$ are length measures. This allows us to easily compare the echo reponse of a large scatterer at low frquency and a small scatterer at high frequency, not based on the absolute values of the scatterer size or the sound frequency, but by $ka$.
+As we have seen in the [acoustic sources](acoustics-source) tutorial, when we talk about the _size_ of the scatterer, we are really talking about the _relative size_ of the scatterer compare to the acoustic wavelength. In acoustics, we often use $ka$, a _dimensionless_ number, to quantify this. Here, $k=2\pi/\lambda$ is the acoustic wavenumber, and $a$ is the _characteristic dimension_ of the scatterer, such as the diameter of a sphere or the length of a cylinder. $ka=2\pi a/\lambda$ is _dimensionless_, because both $\lambda$ and $a$ are length measures. This allows us to easily compare the echo reponse of a large scatterer at low frquency and a small scatterer at high frequency, not based on the absolute size of the scatterer or the sound frequency, but by the ratio between the wavelength and the scatterer size.
 
 When the acoustic wavelength is very large compared to the scatterer ($ka\ll1$), we call this the "Rayleigh" scattering regime, in which the scattering is dominated by diffraction. On the other extreme, when the acoustic wavelength is small compared to the scatterer ($ka\gg1$), we call this the "geometric" regime, in which the scattering is dominated by reflection. In the Rayleigh regime, the exact shape of the scatterer is often not as critical, and the scattering cross section scales with frequency with a steep slope proportional to $(ka)^4$, whereas in the geometric regime, the scattering cross section often varies around a high-frequency limit. This relative stability of scattering strength across frequency is useful for calibrating instruments. For example, below is the TS spectrum of a solid tungston carbide sphere typically used to calibrate a 38 kHz echosounder system.
 
@@ -40,10 +43,10 @@ TS SPECTRUM FOR CALIBRATION SPHERE SHOWING FREQUENCY DEPENDENCY
 
 
 
-
+(acoustics-scattering_discrete_material_properties)=
 ### Scatterer material properties
 
-Scattering phenomena can be complex and depend on the material properties and shape of the object. For example, bubbles or objects that include air in its composition can _resonante_ in the $ka\ll1$ region, producing scattering signals much stronger than similarly sized objects without air. When the object is made of materials very similar to the surrounding water medium, sound can easily transmit and reflet through the object, causing interference that can also be in the spectrum.
+Scattering phenomena can be complex and depend on the material properties and shape of the object. For example, bubbles or objects that include air in its composition can _resonante_ in the $ka\ll1$ region, producing scattering signals much stronger than similarly sized objects without air. When the object is made of materials very similar to the surrounding water medium, sound can easily transmit and reflect through the object, causing interference that can be observed in the spectrum.
 
 Below you can see the TS spectrum from a sphere of the same size but with different material compositions: dense metal, fluid (jelly-like), and air (bubble):
 
@@ -75,11 +78,25 @@ In practice, how do we apply these concepts to interpret echo data? Even though 
 
 
 
-
+(acoustics-scattering_discrete_orientation)=
 ### Orientation dependence
 
+What if we actually consider the non-spherical nature of most objects in nature? In that case, the echoes would indeed vary depending on the direction sound impinges on the scatterer. This is especailly when $ka$ is high and the wavelength is relatively short compared to the scatterer size, such that sound scattered from different part of the scatterer would induce stronger constructive and destructive interference patterns in different directions. This is the same concept as discussed in the [acoustic sources](acoustics-source) section, where higher $ka$ means a more directional beampattern.
 
-- what can we infer using these models?
+To get an idea of how this directionality may look like, try the widget below and see how the TS magnitude and spectral features of a fluid spheroid change depending on the incident sound direction.
+
+**Fluid spheroid**
+ADD WIDGET
+- VARY: incident angle
+- PLOT: TS SPECTRUM
+- OBSERVE CHANGE OF SPECTRAL FEATURES AND MAGNITUDE DUE TO INCIDENCE ANGLE CHANGE
+
+
+As you may have already guessed: The angular variation of TS spectrum—sometimes referred to as the "acoustic color"—can provide valuable information to infer the scatterer identity.
+
+
+
+<!-- - what can we infer using these models?
     - fish/zooplankton abundance
     - density of suspended sediment ([deeper topic]())
     - ([connect to inference/estimation page]())
@@ -99,4 +116,4 @@ In practice, how do we apply these concepts to interpret echo data? Even though 
     - echogram with fish vs zooplankton
     - acoustic color for info content in TS
     - sidescan (tie to propagation/TL section)
-    - SAS
+    - SAS -->
