@@ -42,7 +42,7 @@ TS SPECTRUM FOR RIGID SPHERE SHOWNIG THE FREQUENCY DEPENDENCY
 
 ### Scatterer material properties
 
-Scattering phenomena can be complex and depend on the material properties and shape of the object. For example, bubbles or objects that include gas in its composition can _resonante_ in the $ka\ll1$ region, producing scattering signals much stronger than similarly sized objects without gas. When the object is made of materials very similar to the surrounding water medium, sound can easily transmit and reflet through the object, causing interference that can also be in the spectrum.
+Scattering phenomena can be complex and depend on the material properties and shape of the object. For example, bubbles or objects that include air in its composition can _resonante_ in the $ka\ll1$ region, producing scattering signals much stronger than similarly sized objects without air. When the object is made of materials very similar to the surrounding water medium, sound can easily transmit and reflet through the object, causing interference that can also be in the spectrum.
 
 Below you can see the TS spectrum from a sphere of the same size but with different material compositions: dense metal, fluid (jelly-like), and air (bubble):
 
@@ -53,7 +53,7 @@ TS SPECTRUM FOR 3 SPHERE TYPES OF THE SAME SIZE
 
 To get an intuitive feel of how the echoes change depending on the scatterer, try the two widgets below and see how the TS magnitude and spectral features change depending on the size of the scatterer.
 
-**Bubble**
+**Air-filled sphere**
 ADD WIDGET
 - VARY: BUBBLE RADIUS
 - PLOT: TS SPECTRUM
@@ -67,25 +67,14 @@ ADD WIDGET
 - OBSERVE CHANGE OF SPECTRAL RIPPLES DUE TO SPHERE SIZE CHANGE
 
 
+In practice, how do we apply these concepts to interpret echo data? Even though perfect geometrical shapes like spheres or spheroids are rare in nature, they are often pretty good approximations to many discrete scatterers in the ocean. For example, we can model the fish swimbladder as an air-filled sphere or spheroid, and model a krill as an fluid spheroid or cylinder. By observing how the echo spectrum changes across frequency, we can make inference about the type of animals that produced the echoes.
 
-<!-- Spheres are nice first examples when studying scattering problems, because the spherical shape is a good approximation of many discrete scatterers in the ocean, and the symmetrical geometry allows us to focus on many fundamental properties related to scatterer size and material properties, before considering the potential complication of the exact scatterer shape. -->
 
 
 
 
 
 ### Orientation dependence
-
-
-small - large ka
-
-jump into widgets:
-- fluid size
-- bubble size
-
-play with the widget to answer something
-
-
 
 
 - what can we infer using these models?
