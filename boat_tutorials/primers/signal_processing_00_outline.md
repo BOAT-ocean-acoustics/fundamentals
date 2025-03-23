@@ -1,21 +1,18 @@
 # Signal Processing
 
-## Sound and Decibel
-
-## Time-Frequency Analysis
-* Signals
-* Cross-correlation
-* Fourier Transform
-* Cross-correlation and Fourier tranform connection
-* Application: matched filter
-  * Example: chirp simulation
-* Power Spectral Density
-* Spectrogram
-    * Widget: changing window size and frequency
-    * Discussion on different frequency bands
-    * Transformations: decibel, log domain, normalization
+## Signals
+* sine wave
+* chirp
+* gated chirp
+* impulse
 
 ## Sampling and Quantization
+## Cross-correlation
+## Time-Frequency Analysis 
+* Fourier Transform
+* Spectrogram
 
-## State-Space Representation
-* Linear System
+
+
+
+
