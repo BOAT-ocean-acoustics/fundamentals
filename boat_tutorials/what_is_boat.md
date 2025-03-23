@@ -1,18 +1,37 @@
-# What is BOAT?
+# Welcome to BOAT _fundamentals_!
 
-Bridge to Ocean Acoustic and Technology (BOAT) is a program that aims to broaden the participation of ocean acoustics research by creating open, executable, and web-hosted tutorials that encapsulate fundamental ocean acoustics knowledge and techniques as living documents.
+Ever wondered how whales chat across vast ocean basins? Or how we can "see" underwater without light to track fish or map the seafloor? 
 
-In the current pilot stage, we will focus on two ocean acoustics subfields, the scattering of seabed and the scattering of marine organisms in the water column, to establish a set of "blueprints" that may be helpful for other researcher to develop similar modules focused on other OA subfields for the future expansion of BOAT toward a broad-based, community-driven program.
+In this exectuble Jupyter book, you will find tutorials that **introduce fundamental ocean acoustics concepts via plain languages and interactive "widgets"** that you can play with to develop physical intuition and think about ocean acoustic problems in a holistic manner.
+
+Ocean acoustics technology powers a wide range of real-world applications. We hope these tutorials will offer an entry point for anyone interested to dive deeper into the fascinating world of underwater sound. 
 
 
-## Tutorial structure
-BOAT tutorials are structured with three sets of inter-linked materials:
 
-### Conceptual framework
-Tutorials aimed at building up a conceptual level of understanding that allow students to think about ocean acoustics problems in a holistic manner
 
-### In-depth knowledge
-Tutorials aimed at digging into technical details of solving ocean acoustics problems and building in-depth understanding of specific topics.
+(what_is_boat)=
+## What is BOAT
 
-### Technical primers
-Primers introducing specific technical topics that are used in ocean acoustics problems ubiquitously.
+[Bridge to Ocean Acoustic and Technology (BOAT)](https://boat-ocean-acoustics.github.io/) is an open education program for ocean acoustics via executable tutorials. Our goal is to broaden access to ocean acoustics by empowering learners to explore and advance the field through collaboration and shared knowledge. Learn more about our [philosophy here](https://boat-ocean-acoustics.github.io/intro.html#the-boat-philosophy).
+
+
+
+
+## Development roadmap
+
+With the open-source developer spirit, we view the BOAT tutorials as **living documents** that:
+- learners can interact with dynamically through cloud-hosted platforms
+- will continue to grow through efforts of tutorial contributors and maintainers
+
+To jump start the BOAT program, we are actively building the fundamentals tutorials and will engage participants in two [in-person workshops](https://boat-ocean-acoustics.github.io/intro.html#upcoming-workshops) in spring 2025 to test and evaluate the materials and the approach.
+
+Beyond the fundamentals, we plan to develop additional tutorials focused on:
+- building in-depth understanding of the physics and mathematics in ocean acoustics
+- developing aptitude to leverage modern high-performance computing technologies in ocean acoustics research
+
+Interested in taking part or have questions? Feel free to reach out to boat.ocean.acoustics@gmail.com!
+
+
+
+## Acknowledgement
+We are grateful for the financial support of the US Office of Naval Research, and the inspiration from wonderful open education programs, in particular the [Software Carpantry](https://software-carpentry.org/), [OceanHackWeek](https://oceanhackweek.org/), and [Project Pythia](https://projectpythia.org/).
