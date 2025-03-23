@@ -1,7 +1,10 @@
-## Setup and terminology
+(acoustics-scattering_setup)=
+## Geometry and terminology
 
-When it comes to studying acoustic scattering, there are many terms that could be confusing. We introduce some of them here.
+When it comes to studying acoustic scattering, there are many terms that could be confusing. Read on to learn more about them!
 
+
+(acoustics-scattering_monostatic_bistatic)=
 ### Monostatic vs bistatic
 Monostratic or bistatic describe the spatial relationship between the sound transmitter, receiver, and the scatterer. 
 
@@ -22,6 +25,7 @@ We want to note here, though, that in the physical world, sometimes it is not po
 
 
 
+(acoustics-scattering_differential_scattering_cross_section)=
 ### Differential scattering cross section
 A useful concept when thinking about how something scatters sound is the differential scattering cross section $\sigma = \sigma(\theta_i, \phi_i, \theta_s, \phi_s, f)$, which is a function of the sound frequency $f$, and the angles of the incident and scattering sound, ($\theta_i, \phi_i$) and ($\theta_s, \phi_s$), respectively. 
 
@@ -58,6 +62,7 @@ Here, the $1 \textrm{m}^2$ term in the denominators above is the _reference unit
 
 
 
+(acoustics-scattering_total_cross_sections)=
 ### Total cross sections
 How do we intuitively understand the unit of the differential scattering cross seciton being $\textrm{m}^2$? It is easier to explain from the perspective of energy.
 
