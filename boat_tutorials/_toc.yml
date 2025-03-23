@@ -38,7 +38,7 @@ parts:
   # TECHNICAL PRIMER
   - caption: Technical primers  
     chapters:
-    - file: primers/decibels.ipynb
+    - file: primers/decibel.ipynb
 
     - file: primers/stats_00_outline
       sections: 
