@@ -34,7 +34,7 @@ parts:
       - file: acoustics/TS_01_setup
       - file: acoustics/TS_02_discrete
       - file: acoustics/TS_03_surface
-      - file: acoustics/TS_04_volume
+      - file: acoustics/TS_04_echograms
   # TECHNICAL PRIMER
   - caption: Technical primers  
     chapters:
