@@ -1,5 +1,7 @@
- 
-# Sound speed
+# Impact of water properties on propagation
+
+(acoustics_refraction)=
+# Refraction due to changes in sound speed
 
 The speed with which sound travels through the ocean, the **sound speed**, depends on a number of properties of the seawater, with the temperature, salinity (salt content), and ambient pressure being the primary ones. These properties vary with both position and time in the ocean. In the summer, the water near the sea surface can be warmer than the deeper water. The ambient pressure increases the deeper you go in the ocean due to the weight of the water pushing down from the above. Fresh water flowing into the ocean from a river decreases the salinity near the river mouth. Each of these changes in the water properties leads to a change in the sound speed: the warm, near-surface water has a faster sound speed than the colder, deeper water, the sound speed increases as the ambient pressure increases with depth, and the fresher, river water decreases the speed of sound at the mouth of the river. All of these variations in properties compete with one another to increase or decrease the sound speed creating a complex acoustic environment.
 
@@ -13,8 +15,8 @@ If the sound speed increased again at even deeper depths, the sound would again 
 
 ![Deep water propagation example](../images/Deep_water_propagation_example.png)
 
-
-# Absorption
+(acoustics-water_absorption)=
+# Absorption loss
 
 While sound can be trapped in the SOFAR travel, limiting interactions with the sea surface and seafloor (which can lead to significant loss as discussed in [[TL_4_Reflection]]), the range at which sound can propagate depends also on the frequency of that sound. As the sound waves compress and expand the water, some of the energy used in the motion is converted to heat or lost to chemical reactions that take place within the water. Developing an understanding of the mechanisms behind these processes can be quite involved and will be left to future notebook. Here we will simply mention the processes and look at how they impact the propagation of sound.
 
