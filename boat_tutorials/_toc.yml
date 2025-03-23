@@ -13,7 +13,8 @@ parts:
       sections: 
       - file: acoustics/RL_01_time_series
       - file: acoustics/RL_02_sensitivity
-      - file: acoustics/RL_03_directionality
+      - file: acoustics/RL_03_metrics
+      - file: acoustics/RL_04_directionality
     # acoustic sources
     - file: acoustics/SL_1_Introduction
       sections:
