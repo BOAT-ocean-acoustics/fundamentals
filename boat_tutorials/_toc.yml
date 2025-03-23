@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: what_is_boat
+root: landing
 parts:
   # ACOUSTICS
   - caption: Acoustics
