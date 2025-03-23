@@ -4,6 +4,8 @@ This repository hosts the _fundamentals_ tutorials for the [Bridge to Ocean Acou
 
 Here, you will find tutorials that **introduce fundamental ocean acoustics concepts via plain languages and interactive "widgets"** that you can play with to develop physical intuition and think about ocean acoustic problems in a holistic manner.
 
+
+## Going through the tutorials
 The tutorials are in the format of an executable Jupyter Book, and you can:
 - browse directly the [pre-built version](https://boat-fundamentals.readthedocs.io/en/latest/landing.html), or
 - open up the GitHub codespaces to try out the widgets interactively (see [instructions here](https://boat-fundamentals.readthedocs.io/en/latest/primers/codespaces.html) to get set up)
