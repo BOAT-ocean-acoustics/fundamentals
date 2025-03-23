@@ -2,7 +2,7 @@
 
 Ever wondered how whales chat across vast ocean basins? Or how we can "see" underwater without light to track fish or map the seafloor? 
 
-In this exectuble Jupyter book, you will find tutorials that **introduce fundamental ocean acoustics concepts via plain languages and interactive "widgets"** that you can play with to develop physical intuition and think about ocean acoustic problems in a holistic manner.
+In this executable Jupyter Book, you will find tutorials that **introduce fundamental ocean acoustics concepts via plain languages and interactive "widgets"** that you can play with to develop physical intuition and think about ocean acoustic problems in a holistic manner.
 
 Ocean acoustics technology powers a wide range of real-world applications. We hope these tutorials will offer an entry point for anyone interested to dive deeper into the fascinating world of underwater sound. 
 

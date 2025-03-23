@@ -1,14 +1,19 @@
-# Bridge to Ocean Acoustics and Technology (BOAT)
+# BOAT fundamentals
 
-This repository hosts the initial development of the tutorials for the Bridge to Ocean Acoustics and Technology (BOAT) program.
+This repository hosts the _fundamentals_ tutorials for the [Bridge to Ocean Acoustics and Technology (BOAT)](https://boat-ocean-acoustics.github.io/) program. 
 
-We may break up this repository into multiple repositories as the materials grow and we invite others to join the effort.
+Here, you will find tutorials that **introduce fundamental ocean acoustics concepts via plain languages and interactive "widgets"** that you can play with to develop physical intuition and think about ocean acoustic problems in a holistic manner.
+
+The tutorials are in the format of an executable Jupyter Book, and you can:
+- browse directly the [pre-built version](https://boat-fundamentals.readthedocs.io/en/latest/landing.html), or
+- open up the GitHub codespaces to try out the widgets interactively (see [instructions here](https://boat-fundamentals.readthedocs.io/en/latest/primers/codespaces.html) to get set up)
+
 
 ## Repo structure
 Below is a quick summary of what are in the folders:
-- [conceptual](./boat_tutorials/conceptual/): tutorials aimed at building up a conceptual level of understanding that allow students to think about ocean acoustics problems in a holistic manner
-- [in_depth](./boat_tutorials/in_depth/): tutorials aimed at digging into technical details of solving ocean acoustics problems and building in-depth understanding of specific topics.
-- [primers](./boat_tutorials/others): primers introducing specific technical topics that are used in ocean acoustics problems ubiquitously.
-- [images](./boat_tutorials/images): images used in the tutorial pages
-- [matlab](./boat_tutorials/matlab): matlab LiveScript prototypes of Python interactive widgets
-- [templates](./boat_tutorials/templates): templates from the JupyterBook starting pages for reference
+- [acoustics](./boat_tutorials/acoustics/): tutorials on ocean acoustic topics
+- [primers](./boat_tutorials/primers): tutorials on technical concepts widely used in ocean acoustics
+- [exercises](./boat_tutorials/exercises): notebooks and related info for hands-on data exercises
+- [images](./boat_tutorials/images): images used in tutorials
+- [resources](./boat_tutorials/resources): other resources used in tutorials
+- [misc](./boat_tutorials/misc): miscellaneous pieces of code or notes used in tutorial development
