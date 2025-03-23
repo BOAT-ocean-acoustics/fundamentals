@@ -1,7 +1,3 @@
-
-
-
-
 (acoustics-intro_sonar_equation)=
 ## The mighty SONAR equation
 
@@ -11,23 +7,23 @@ In pure listening scenarios, the sonar equation is written as:
 
 (acoustics-intro_sonar_equation_passive)=
 $$
-\textrm{RL} = \textrm{SL} - \textrm{TL},
+TL = SL - TL
 $$
 
 and in the active sensing scenario, it is written as:
 
 (acoustics-intro_sonar_equation_active)=
 $$
-\textrm{RL} = \textrm{SL} - 2\textrm{TL} + \textrm{TS}
+RL = SL - 2TL + TS
 $$
 
 where:
-- $\textrm{RL}$ denotes receive level, or the strength of the received sound
-- $\textrm{SL}$ denotes source level, or the intensity of the emitted sound
-- $\textrm{TL}$ denotes transmission loss, or the attenuation of sound as it travels
-- $\textrm{TS}$ denotes target strength, or the acoustic reflectivity of the target
+- $RL$ denotes receive level, or the strength of the received sound
+- $SL$ denotes source level, or the intensity of the emitted sound
+- $TL$ denotes transmission loss, or the attenuation of sound as it travels
+- $TS$ denotes target strength, or the acoustic reflectivity of the target
 
-You may find variations of the sonar equation that include additional terms, such as noise level ($\textrm{NL}$), array gain ($\textrm{AG}$), or directivity index ($\textrm{DI}$), as seen on the [DOSITS](https://dosits.org/science/advanced-topics/sonar-equation/) website. These variations arise from the specific problem setup and the instrumentation used.
+You may find variations of the sonar equation that include additional terms, such as noise level ($NL$), array gain ($AG$), or directivity index ($DI$), as seen on the [DOSITS](https://dosits.org/science/advanced-topics/sonar-equation/) website. These variations arise from the specific problem setup and the instrumentation used.
 
 
 ```{Note}
@@ -39,6 +35,7 @@ The SONAR equation effectively breaks down the complex ocean acoustics "system" 
 In the following tutorials, we will use the SONAR equation as a guide to explore key components of an ocean acoustics problem (the "system"), including acoustic sources and receiver (both biological or human-made), sound propagation and scattering (due to biotic or abiotic factors), and applications of signal processing and statistical methods to real-world ocean acoustic data through both conceptual introductions and hands-on exercises.
 
 But first, let's see how we can use the SONAR equation to help us break down the complex problem of studying the lives of orcas using sound.
+
 
 ```{Tip}
 :class: tip
