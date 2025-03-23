@@ -1,3 +1,6 @@
+(acoustics-TL)=
+# Transmission Loss
+
 Transmission loss is defined as the ratio of the intensity of transmitted sound at some range, $r$, to the intensity of the transmitted sound at $r =$ 1 m expressed in dB,
 
 $$ TL\left(r\right) = -10\log_{10}\frac{I\left(r\right)}{I\left(1\right)} = -20\log_{10}\frac{\left|p\left(r\right)\right|}{\left|p\left(1\right)\right|}.  $$
