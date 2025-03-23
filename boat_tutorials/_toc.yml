@@ -38,6 +38,8 @@ parts:
   # TECHNICAL PRIMER
   - caption: Technical primers  
     chapters:
+    - file: primers/decibels.ipynb
+
     - file: primers/stats_00_outline
       sections: 
       - file: primers/stats_01_random_variables.md
@@ -52,6 +54,7 @@ parts:
       - file: primers/time_freq
     
     - file: primers/instrument_selection
+     
     # - file: primers/linear_system
     # - file: echogram
   # - caption: Jupyter Book templates
