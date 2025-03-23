@@ -6,7 +6,7 @@
 - What makes a good hydrophone to detect the whales? What key characteristics should we consider?
 -->
 
-We first consider the scenario of Oli trying to communicate with Ola, and examine how different terms in the SONAR equation come into play:
+How does the SONAR equation help understand the lives of orcas? Let's first consider the scenario of Oli trying to communicate with Ola, and examine how different terms in the SONAR equation come into play:
 
 (acoustics-intro_orca_comms)=
 ```{image} ../images/0_intro/orca_comms.jpg
@@ -14,7 +14,7 @@ We first consider the scenario of Oli trying to communicate with Ola, and examin
 :align: center
 ```
 
-You can see here that $\textrm{SL}$ characterizes how loud Oli is calling, $\textrm{TL}$ describes how much sound energy is "lost" before the sound reaches Ola, and $\textrm{RL}$ represents how loud the sound is when Ola receives. Depending on what the environment Oli and Ola are in, the content of Oli's signal (e.g., spectrum), Ola may or may not be able to hear Oli, or hear clearly what Oli is saying.
+Here, $SL$ characterizes how loud Oli is calling, $TL$ describes how much sound energy is "lost" before the sound reaches Ola, and $RL$ represents how loud the sound is when Ola receives. Depending on what the environment Oli and Ola are in, the content of Oli's signal (e.g., spectrum), Ola may or may not be able to hear Oli, or hear clearly what Oli is saying.
 
 For example, if they are in a shallow channel, Oli's sound may bounce around between the sea surface and seafloor ("multipath" propagation) and cause Ola to hear multiple copies of the same sound. It also turns out that Oli's sound may not reach as far in warmer water compared to in colder water. You will learn more about these in the following sections.
 

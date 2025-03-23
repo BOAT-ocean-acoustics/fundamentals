@@ -63,3 +63,9 @@ Next, we will introduce the mighty "SONAR equation" to help us answer these ques
     - blue whales communicate across ocean basin
     - humpback whales cultural transmission of call units
  -->
+
+<!-- 
+- How far can killer whales hear each other? How far can we detect them using hydrophones? Does this distance change depending on the type of sound whales emit?
+- How do whales identify different fish species through echolocation? How do echoes change with fish size or when there are multiple fish?
+- What makes a good hydrophone to detect the whales? What key characteristics should we consider?
+-->
