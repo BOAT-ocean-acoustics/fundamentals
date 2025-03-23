@@ -34,4 +34,4 @@ Interested in taking part or have questions? Feel free to reach out to boat.ocea
 
 
 ## Acknowledgement
-We are grateful for the financial support of the US Office of Naval Research, and the inspiration from wonderful open education programs, in particular the [Software Carpantry](https://software-carpentry.org/), [OceanHackWeek](https://oceanhackweek.org/), and [Project Pythia](https://projectpythia.org/).
+We are grateful for the financial support of the [US Office of Naval Research (ONR)](https://www.onr.navy.mil/), and the inspiration from many wonderful open education programs, in particular the [Software Carpantry](https://software-carpentry.org/), [OceanHackWeek](https://oceanhackweek.org/), and [Project Pythia](https://projectpythia.org/).
