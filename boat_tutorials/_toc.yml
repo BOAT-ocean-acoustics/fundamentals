@@ -11,8 +11,8 @@ parts:
     # sound reception
     - file: acoustics/RL_00_intro
       sections: 
-      - file: acoustics/RL_01_time_series
-      - file: acoustics/RL_02_sensitivity
+      - file: acoustics/RL_01_sensitivity
+      - file: acoustics/RL_02_time_series
       - file: acoustics/RL_03_metrics
       - file: acoustics/RL_04_directionality
     # acoustic sources
