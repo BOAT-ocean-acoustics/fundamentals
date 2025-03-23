@@ -7,7 +7,7 @@ In pure listening scenarios, the sonar equation is written as:
 
 (acoustics-intro_sonar_equation_passive)=
 $$
-TL = SL - TL
+RL = SL - TL
 $$
 
 and in the active sensing scenario, it is written as:
@@ -18,10 +18,10 @@ RL = SL - 2TL + TS
 $$
 
 where:
-- $RL$ denotes receive level, or the strength of the received sound
-- $SL$ denotes source level, or the intensity of the emitted sound
-- $TL$ denotes transmission loss, or the attenuation of sound as it travels
-- $TS$ denotes target strength, or the acoustic reflectivity of the target
+- $RL$ is receive level, or the strength of the received sound
+- $SL$ is source level, or the intensity of the emitted sound
+- $TL$ is transmission loss, or the attenuation of sound as it travels
+- $TS$ is target strength, or the acoustic reflectivity of the target
 
 You may find variations of the sonar equation that include additional terms, such as noise level ($NL$), array gain ($AG$), or directivity index ($DI$), as seen on the [DOSITS](https://dosits.org/science/advanced-topics/sonar-equation/) website. These variations arise from the specific problem setup and the instrumentation used.
 
