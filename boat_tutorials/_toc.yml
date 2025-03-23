@@ -2,18 +2,26 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: what_is_boat
+root: landing
 parts:
   # ACOUSTICS
   - caption: Acoustics
     chapters:
-    - file: acoustics/intro
+    # overall framework
+    - file: acoustics/intro_00_motivation
+      sections: 
+      - file: acoustics/intro_01_sonar_eq
+      - file: acoustics/intro_02_orca_sonar_eq
+      - file: acoustics/intro_03_widget_sonar_eq
+      - file: acoustics/intro_04_exercises
+      - file: acoustics/intro_05_misc
     # sound reception
     - file: acoustics/RL_00_intro
       sections: 
-      - file: acoustics/RL_01_time_series
-      - file: acoustics/RL_02_sensitivity
-      - file: acoustics/RL_03_directionality
+      - file: acoustics/RL_01_sensitivity
+      - file: acoustics/RL_02_time_series
+      - file: acoustics/RL_03_metrics
+      - file: acoustics/RL_04_directionality
     # acoustic sources
     - file: acoustics/SL_1_Introduction
       sections:
