@@ -20,6 +20,13 @@ parts:
     - file: in_depth/wave_eq
   - caption: Technical primers  # other important topics
     chapters:
+  - file: primers/signal_processing_00_outline   
+      sections:
+      - file: primers/signal_processing_01_signals.ipynb
+      - file: primers/signal_processing_02_sampling.ipynb 
+      - file: primers/signal_processing_03_cross-correlation.ipynb 
+      - file: primers/signal_processing_04_time_freq.ipynb
+  
     - file: primers/stats_00_outline
       sections: 
       - file: primers/stats_01_random_variables.md
@@ -28,12 +35,6 @@ parts:
       - file: primers/stats_04_parametric_estimation.ipynb
       - file: primers/stats_05_testing.ipynb
       
-    - file: primers/signal_processing_00_outline   
-      sections:
-      - file: primers/signal_processing_01_signals.ipynb
-      - file: primers/signal_processing_02_sampling.ipynb 
-      - file: primers/signal_processing_03_cross-correlation.ipynb 
-      - file: primers/signal_processing_04_time_freq.ipynb
     
     - file: primers/instrument_selection
     # - file: primers/linear_system
