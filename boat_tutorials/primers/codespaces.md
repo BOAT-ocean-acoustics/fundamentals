@@ -28,10 +28,32 @@ Select the tutorial repository and the smallest machine.
 <img width="865" alt="codespace_vm" src="https://github.com/user-attachments/assets/c1c4133f-e49e-439a-8635-fc8ec1efaead" />
 
 ---
+#### 4. Change to JupyterLab View
+
+The default view in Codespaces is using the VSCode interface. To switch to JupyterLab interface, go to your "My Codespaces" page, click on the triple dots to the right of your codespace name, and select "Open in JupyterLab". Note, the widgets run faster in JupyterLab!
+
+<img width="1106" alt="JupyterLabView" src="https://github.com/user-attachments/assets/4d08bd1c-b9eb-4d05-93d9-80867f18eab3" />
+
+---
 #### 4. Open a Notebook
 You can open an existing or new notebook by navigating to New->File
    
 <img width="1099" alt="NewNotebook" src="https://github.com/user-attachments/assets/944fa232-7cae-4f36-84dc-6594406b3762" />
+
+Run through cells of the `starter-notebook.ipynb` to test your set up. This will also install the necessary libraries.
+
+---
+#### 5. Installing Packages
+Python libraries can be directly installed within a notebook or from the terminal. The libraries needed to run the notebooks are listed in the `boat_tutorials/requirements.txt` file and can be installed with the command
+
+```
+pip install -r requirements.txt
+```
+
+If you need a library, you can install it directly:
+```
+pip install ipywidgets
+```
 
 ---
 #### 5. Return to Codespace
@@ -55,6 +77,8 @@ When you have finished using the codespace, make sure you stop it so you do not 
 ```{caution} 
 If you have already used your Codespaces allocation for personal needs, you can clone the repository and execute the notebooks on your computer. Let us know if you encounter any setup problems.
 ```
+
+
 
 
 
