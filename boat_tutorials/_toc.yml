@@ -13,7 +13,7 @@ parts:
       - file: acoustics/intro_01_sonar_eq
       - file: acoustics/intro_02_orca_sonar_eq
       - file: acoustics/intro_03_widget_sonar_eq
-      - file: acoustics/intro_04_exercises
+      # - file: acoustics/intro_04_exercises
       - file: acoustics/intro_05_misc
     # sound reception
     - file: acoustics/RL_00_intro
