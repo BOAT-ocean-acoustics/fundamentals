@@ -1,5 +1,5 @@
 (acoustics-intro)=
-# Conceptual framework
+# Overall framework
 
 In this tutorial, we will develop a solid understanding of how to breakdown an ocean acoustics problem into distinct components that can each be analyzed separately. This "systems" approach provides a structured framework that will help us gain a holistic picture of the problem.
 
