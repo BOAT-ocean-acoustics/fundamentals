@@ -40,7 +40,7 @@ You can open an existing or new notebook by navigating to New->File
    
 <img width="1099" alt="NewNotebook" src="https://github.com/user-attachments/assets/944fa232-7cae-4f36-84dc-6594406b3762" />
 
-Run through cells of the `starter-notebook.ipynb` to test your set up. This will also install the necessary libraries.
+Run through cells of the `codespaces_start.ipynb` to test your set up. This will also install the necessary libraries.
 
 ---
 #### 6. Install Packages
