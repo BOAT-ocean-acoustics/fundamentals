@@ -22,11 +22,6 @@ parts:
       - file: acoustics/RL_02_time_series
       - file: acoustics/RL_03_metrics
       - file: acoustics/RL_04_directionality
-    # acoustic sources
-    - file: acoustics/SL_1_Introduction
-      sections:
-        - file: acoustics/SL_2_beampattern.ipynb
-        - file: acoustics/SL_3_Near_Field_and_Source_Level.ipynb
     # propagation
     - file: acoustics/TL_1_Introduction
       sections:
@@ -36,6 +31,11 @@ parts:
         - file: acoustics/TL_5_Near_Surface_Propagation.ipynb
         - file: acoustics/TL_6_Ocean_Waveguide_Propagation.ipynb
         - file: acoustics/TL_7_Transmission_Loss
+    # acoustic sources
+    - file: acoustics/SL_1_Introduction
+      sections:
+        - file: acoustics/SL_2_beampattern.ipynb
+        - file: acoustics/SL_3_Near_Field_and_Source_Level.ipynb
     # scattering
     - file: acoustics/TS_00_intro
       sections: 
