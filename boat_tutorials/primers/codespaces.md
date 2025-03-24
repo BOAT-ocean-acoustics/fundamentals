@@ -35,7 +35,7 @@ The default view in Codespaces is using the VSCode interface. To switch to Jupyt
 <img width="1106" alt="JupyterLabView" src="https://github.com/user-attachments/assets/4d08bd1c-b9eb-4d05-93d9-80867f18eab3" />
 
 ---
-#### 4. Open a Notebook
+#### 5. Open a Notebook
 You can open an existing or new notebook by navigating to New->File
    
 <img width="1099" alt="NewNotebook" src="https://github.com/user-attachments/assets/944fa232-7cae-4f36-84dc-6594406b3762" />
@@ -43,7 +43,7 @@ You can open an existing or new notebook by navigating to New->File
 Run through cells of the `starter-notebook.ipynb` to test your set up. This will also install the necessary libraries.
 
 ---
-#### 5. Installing Packages
+#### 6. Install Packages
 Python libraries can be directly installed within a notebook or from the terminal. The libraries needed to run the notebooks are listed in the `boat_tutorials/requirements.txt` file and can be installed with the command
 
 ```
@@ -56,19 +56,25 @@ pip install ipywidgets
 ```
 
 ---
-#### 5. Return to Codespace
+#### 7. Return to Codespace
 To return to a codespace navigate to [https://github.com/<your_username>/codespaces/]() or open the settings on the top-left triple bar and select Codespaces.
     
 <img width="1043" alt="mycodespaces" src="https://github.com/user-attachments/assets/8961b918-c6c5-480d-9cd3-8d360c59461d" />
 
+#### 8. Refresh Repository Content
+To update to the latest content sync your fork with the main repository and start a new codespace. Note you will have to run the package installation again.
+
+<img width="1016" alt="SyncFork" src="https://github.com/user-attachments/assets/fa31e261-ae64-4fdc-8f4a-4ed0632f74ed" />
+
+
 ---
-#### 6. Save Your Work
+#### 9. Save Your Work
 A codespace is deleted if inactive for 30 days. It also restarts periodically. Regularly save your work. If you use GitHub you can commit it to your repository (either through the GitHub integration or through commands on the terminal).
     
 <img width="1010" alt="github_integration" src="https://github.com/user-attachments/assets/b4a568db-45e3-451e-81d4-e455340ae236" />
 
 ---
-#### 7. Stop the Codespace
+#### 10. Stop the Codespace
 When you have finished using the codespace, make sure you stop it so you do not waste core hours. Your work will be preserved.
     
 <img width="1087" alt="codespace_stop" src="https://github.com/user-attachments/assets/fb17942a-1e82-4caf-aebb-49cc3bd78b9a" />
