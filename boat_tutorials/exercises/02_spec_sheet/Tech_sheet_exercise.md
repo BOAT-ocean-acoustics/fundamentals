@@ -1,4 +1,4 @@
-# Tech sheet exercise:
+# Tech sheet exercise
 
 Uses: 
 - [Technical Specs for the Nortek Sig100](https://www.nortekgroup.com/products/signature100/pdf)
