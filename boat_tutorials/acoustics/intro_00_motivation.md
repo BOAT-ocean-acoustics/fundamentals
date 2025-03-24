@@ -29,9 +29,11 @@ Through this example, you will see how the physics of sound, the biology of whal
 
 
 ### How and when do orcas use sound?
-Killer whales are toothed whales (odontocetes) that use sound to communicate with each other and find food in the ocean. There are two types of killer whales living on the west coast of the north American continent: the ["resident" and the "transient"](REF) killer whales.
+Killer whales are toothed whales (odontocetes) that use sound to communicate with each other and find food in the ocean. There are two types of killer whales living on the west coast of the north American continent: the ["resident" and the "transient"](https://en.wikipedia.org/wiki/Orca_types_and_populations) killer whales.
 
-Resident killer whales typically hang out in coastal waters and primary feed on fish, such as salmon. Since many fish don't make sound, whales produce impulsive and directional sounds (the ["clicks"](REF)) and use the returning echoes to find, track, and catch the fish. This is a special sensing modality called "echolocation," which is also used by all toothed whales and most bats. 
+Resident killer whales typically hang out in coastal waters and primary feed on fish, such as salmon. Since many fish don't make sound, whales produce impulsive and directional sounds (the "clicks") and use the returning echoes to find, track, and catch the fish. This is a special sensing modality called "echolocation," which is also used by all toothed whales and most bats. 
+
+<!-- ADD CLICK EXAMPLE -->
 
 <!-- In this case, these fish species don't hear sounds produced by the killer whales because that is beyond their hearing range. However, note that this is not always true, as there are fish species with specialized high frequency hearing capability that can hear sounds above 20 kHz (which is considered "ultrasonic" for humans). -->
 
@@ -42,13 +44,14 @@ Both resident and transient killer whales use a rich repertoire of sounds to com
 ### How do we use ocean acoustics techniques to study orca?
 Given killer whales' extensive use of sound in communication and foraging, we can leverage hydrophones to detect their presence, identify the groups, and infer their activities (e.g., feeding or socializing). As each hydrophone has a limited effective listening range, we can use a network of hydropohones to monitor whales over a larger special area. This is precisely what [Orcasound](https://www.orcasound.net/) is doing in the northeast Pacific Ocean. 
 
-EMBED SPECTROGRAM EXAMPLE WITH SOUND
-LINK TO SPECTRAL ANALYSIS PAGE
+<!-- EMBED SPECTROGRAM EXAMPLE WITH SOUND
+LINK TO SPECTRAL ANALYSIS PAGE -->
 <!-- One can also use multiple closely spaced hydrophones to accurately localize the whales. -->
 
-Scientists attach small electronic "tags" equipped with hydrophones and other sensors to whales. These tags record the sounds whales produce and hear, alongside their movements, offering a perspective from the whale's point of view. For example, an [echogram](REF) like below visually depicts what the whale may be hearing in the echoes when closing in on a prey item.
+Scientists attach small electronic "tags" equipped with hydrophones and other sensors to whales. These tags record the sounds whales produce and hear, alongside their movements, offering a perspective from the whale's point of view. 
 
-ADD CLICK ECHOGRAM
+<!-- For example, an [echogram](REF) like below visually depicts what the whale may be hearing in the echoes when closing in on a prey item. -->
+<!-- ADD CLICK ECHOGRAM -->
 
 Knowing all the above, we can start to ask questions like:
 - How far can killer whales hear each other? How far can we detect them using hydrophones? Does this distance change depending on the type of sound whales emit?
