@@ -9,13 +9,13 @@ Receive level (RL) is what we typically measure when trying to listen to the oce
 
     $RL = SL - TL$
 
-- RL combines sound transmission, two-way propagation, and scattering (TS) when Ola is [_pinging and listening_]((acoustics-intro_orca_fish_echo)):
+- RL combines sound transmission, two-way propagation, and scattering (TS) when Ola is [_pinging and listening_](acoustics-intro_orca_fish_echo):
 
     $RL = SL - 2TL + TS$
 
 
 
-With RL, we can often tell whether a sound source (such as another whale) is present against a much quieter background. However, since most sound recordings are a time series (a series of high and low voltage measurements) and not a single number, we need to know how to turn that into RL. In addition, there are other informative sound attributes other than the "level" (loudness), such as the temporal pattern and its frequency content. For example, the sound of wind, rain, cracking ice, and various animals are all different. We will dive deeper into these attributes in the [Spectral analysis](acoustics-spectral) tutorial and practice with real-world data during the hands-on exercise sections.
+With RL, we can often tell whether a sound source (such as another whale) is present against a much quieter background. However, since most sound recordings are a time series (a series of high and low voltage measurements) and not a single number, we need to know how to turn that into RL. In addition, there are other informative sound attributes other than the "level" (loudness), such as the temporal pattern and its frequency content. For example, the sound of wind, rain, cracking ice, and various animals are all different. We will dive deeper into these attributes in the [Time-frequency analysis](time-frequency-analysis) tutorial and practice with real-world data during the hands-on exercise sections.
 
 First, let's see how we can actually capture sound in the ocean!
 
