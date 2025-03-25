@@ -8,6 +8,12 @@ When it comes to studying acoustic scattering, there are many terms that could b
 ### Monostatic vs bistatic
 Monostratic or bistatic describe the spatial relationship between the sound transmitter, receiver, and the scatterer. 
 
+
+```{image} ../images/monostatic_bistatic.png
+:width: 600px
+:align: center
+```
+
 "Monostatic" means that the transmitter and receiver are located at the same place (co-located). This is the scenario typically seen in fisheries echosounders or bottom profilers, for which the same or nearby set of transducers are used to both transmit the probing signals and receive the returning echoes. In a monostatic setup, the returning echo signals are often referred to as "backscatter," because they travel in the opposite direction (180$^\circ$ angle) from the transmitted sound.
 <!-- MENTION REVERBERATION! -->
 
