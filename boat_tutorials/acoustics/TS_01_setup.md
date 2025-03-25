@@ -6,7 +6,7 @@ When it comes to studying acoustic scattering, there are many terms that could b
 
 (acoustics-scattering_monostatic_bistatic)=
 ### Monostatic vs bistatic
-Monostratic or bistatic describe the spatial relationship between the sound transmitter, receiver, and the scatterer. 
+The terms "monostatic" or "bistatic" describe the spatial relationship between the sound transmitter, receiver, and the scatterer. 
 
 
 ```{image} ../images/monostatic_bistatic.png
