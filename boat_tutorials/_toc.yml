@@ -62,7 +62,7 @@ parts:
       - file: primers/stats_01_random_variables.md
       - file: primers/stats_02_sound_level_distribution.ipynb
       - file: primers/stats_03_parametric_distributions.ipynb
-      - file: primers/stats_04_parametric_estimation.ipynb
+      - file: primers/stats_04_parameter_estimation.ipynb
       - file: primers/stats_05_testing.ipynb
 
 
