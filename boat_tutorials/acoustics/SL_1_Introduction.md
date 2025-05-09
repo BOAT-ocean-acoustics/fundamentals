@@ -17,8 +17,17 @@ higher values of SL lead to higher received levels. As we will see, the source l
 
 ## Sonar systems
 
-Before diving in, it's worth talking about what we mean when we say "sonar systems." These usually refer to an human-made sound producing and/or receiving system that operates underwater. The basic idea behind a sonar is that it takes an electronic signal, typically a voltage that varies in time, and feeds that signal into a transducer which transforms that voltage into mechanical motion that generates sound. Any device that converts energy from one form to another is called a **transducer.** For example, the speaker in your headphones uses an electrical current to move a magnet which vibrates a surface against the air to produce sound. There are many types of transducers used in the design of sonars and the choice of transducer is often determined by the characteristics of the sound that needs to be produced. For example, an echosounder might use a small disk of piezoelectric material to produce a high-frequency, narrow beam of sound while scientists trying to transmit low-frequency sound across the Pacific Ocean used the 3-ton sound source pictured below.
+Before diving in, it's worth talking about what we mean when we say "sonar systems." These usually refer to a human-made sound producing and/or receiving system that operates underwater. The basic idea behind a sonar is that it takes an electronic signal, typically a voltage that varies in time, and feeds that signal into a transducer which transforms that voltage into mechanical motion that generates sound. Any device that converts energy from one form to another is called a **transducer.** For example, the speaker in your headphones uses an electrical current to move a magnet which vibrates a surface against the air to produce sound. There are many types of transducers used in the design of sonars and the choice of transducer is often determined by the characteristics of the sound that needs to be produced. For example, an echosounder might use a small disk of piezoelectric material to produce a high-frequency, narrow beam of sound (like the RESON TC 3021 transducer pictured on the left) while scientists trying to transmit low-frequency sound across the Pacific Ocean used the 3-ton sound source pictured on the right.
 
-![Kauai Source](../images/KAUAI_source.png)
+```{image} ../images/reson_TC3021.jpg
+:width: 300px
+```
+```{image} ../images/KAUAI_source.png
+:width: 300px
+```
+(acoustics-spherical_source)=
+## Spherical sources
+
+We will start by considering the simplest type of transducer: the spherical source. Ideally, as the name suggests, this source is a sphere of constant radius that is designed to produce sound by uniformly getting bigger and smaller, changing it's radius as a function of time. This change in size pushes against the surrounding water sending sound in all directions. The benefit of this type of source is that the intensity of the projected sound does not depend on the orientation of the transducer.  
 
 We will begin by considering a simple model of sound source (the baffled, circular piston) and consider how the transducer's size and shape as well as the frequency at which it is driven, impact the character of the sound field that is emitted.
