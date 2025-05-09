@@ -26,7 +26,7 @@ parts:
     - file: acoustics/TL_1_Introduction
       sections:
         - file: acoustics/TL_2_Free_Space.ipynb
-        - file: acoustics/TL_3_Impact_of_Water_Properties
+        - file: acoustics/TL_3_Impact_of_Water_Properties.ipynb
         - file: acoustics/TL_4_Reflection.ipynb
         - file: acoustics/TL_5_Near_Surface_Propagation.ipynb
         - file: acoustics/TL_6_Ocean_Waveguide_Propagation.ipynb
