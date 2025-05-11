@@ -43,7 +43,7 @@ sphinx:
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
-    'sphinx_exercise'
+    # 'sphinx_exercise'
   ]
   config:
     bibtex_reference_style: author_year
