@@ -42,7 +42,8 @@ sphinx:
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
-    'sphinx.ext.githubpages'
+    'sphinx.ext.githubpages',
+    'sphinx_exercise'
   ]
   config:
     bibtex_reference_style: author_year
