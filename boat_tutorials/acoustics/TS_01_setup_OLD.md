@@ -1,11 +1,11 @@
 (acoustics-scattering_setup)=
-## Geometry and terminology
+# Geometry and terminology
 
 When it comes to studying acoustic scattering, there are many terms that could be confusing. Read on to learn more about them!
 
 
 (acoustics-scattering_monostatic_bistatic)=
-### Monostatic vs bistatic
+## Monostatic vs bistatic
 The terms "monostatic" or "bistatic" describe the spatial relationship between the sound transmitter, receiver, and the scatterer. 
 
 
@@ -14,18 +14,19 @@ The terms "monostatic" or "bistatic" describe the spatial relationship between t
 :align: center
 ```
 
-"Monostatic" means that the transmitter and receiver are located at the same place (co-located). This is the scenario typically seen in fisheries echosounders or bottom profilers, for which the same or nearby set of transducers are used to both transmit the probing signals and receive the returning echoes. In a monostatic setup, the returning echo signals are often referred to as "backscatter," because they travel in the opposite direction (180$^\circ$ angle) from the transmitted sound.
+**Monostatic** means that the transmitter and receiver are located at the same place (co-located). This is the scenario typically seen in fisheries echosounders or bottom profilers, for which the same or nearby set of transducers are used to both transmit the probing signals and receive the returning echoes. In a monostatic setup, the returning echo signals are often referred to as **backscatter**, because they travel in the opposite direction (180$^\circ$ angle) from the transmitted sound.
+
+It can sometimes be difficult to use the same transducer to transmit sound and receive echoes. In these cases, researchers often put the transmitter and receiver as close as possible side-by-side, to _approximate_ the monostatic setup. The quality of this approximation depends on the sound frequency and scatterer size, as we shall see below.
+
+
 <!-- MENTION REVERBERATION! -->
 
 <!-- ADD PICTURE OF ECHOSOUNDER PINGING -->
 
-"Bistatic" means that the transmitter and receiver are located separately at different places. This is typically seen in problems involving a much larger spatial context, such as when we are interested in measuring how sound interacts with the seafloor and sea surface before reaching a receiver very far away from the transmitter. As you can see, the direction of the scatterered signals does not have to be in a specific direction with respect to the transmitted sound.
+**Bistatic** means that the transmitter and receiver are located separately at different places. This is typically seen in problems involving a much larger spatial context, such as when we are interested in measuring how sound interacts with the seafloor and sea surface before reaching a receiver far away from the transmitter. Here, the direction of the scatterered signals does not have to be in a specific direction with respect to the transmitted sound.
 
 <!-- ADD PICTURE OF BISTATIC SETUP -->
 
-We want to note here, though, that in the physical world, sometimes it is not possible to use the same transducer to transmit sound and receive echoes. In these cases, researchers often put the transmitter and receiver as close as possible  side-by-side, to _approximate_ the monostatic setup. The quality of this approximation depends on the sound frequency and scatterer size, as we shall see below.
-
-<!-- CONNECTION TO DEEPER TOPIC: FORGOT WHAT WE WERE THINKING... -->
 
 
 
