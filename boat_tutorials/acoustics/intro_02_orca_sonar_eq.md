@@ -9,7 +9,7 @@
 How does the SONAR equation help understand the lives of orcas? Let's first consider the scenario of Oli trying to communicate with Ola, and examine how different terms in the SONAR equation come into play:
 
 (acoustics-intro_orca_comms)=
-```{image} ../images/oli_ola.png
+```{image} ../images/intro/oli_ola.png
 :width: 600px
 :align: center
 ```
@@ -22,7 +22,7 @@ For example, if they are in a shallow channel, Oli's sound may bounce around bet
 
 What if we want to predict how far we can detect Oli? It's pretty straightforward: just replace Ola with a hydrophone:
 
-```{image} ../images/oli_hydrophone.png
+```{image} ../images/intro/oli_hydrophone.png
 :width: 600px
 :align: center
 ```
@@ -32,7 +32,7 @@ But of course, we need to consider if Ola and the hydrophone receives sound the 
 Now let's consider the scenario where Ola wants to detect and track down a fish. The picture then changes to the following:
 
 (acoustics-intro_orca_fish_echo)=
-```{image} ../images/ola_fish.png
+```{image} ../images/intro/ola_fish.png
 :width: 600px
 :align: center
 ```
