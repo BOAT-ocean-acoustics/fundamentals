@@ -1,10 +1,10 @@
 (random-variables)=
 # Random Variables
 
-:::{tip}**Learning Objectives**
+```{tip}**Learning Objectives**
 1. Outline the components of a statistical experiment.
 2. Identify examples of each component within a scientific experiment.
-:::
+```
 
 ## Ocean Sound Levels Experiment
 
