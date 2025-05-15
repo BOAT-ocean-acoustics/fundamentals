@@ -1,6 +1,11 @@
 (random-variables)=
 # Random Variables
 
+:::{tip}**Learning Objectives**
+1. Outline the components of a statistical experiment.
+2. Identify examples of each component within a scientific experiment.
+:::
+
 ## Ocean Sound Levels Experiment
 
 Suppose we want to study the ocean sound levels and would like to know if it is "louder" during a given period of time compared to an earlier time. For example, we may have different hypotheses:
