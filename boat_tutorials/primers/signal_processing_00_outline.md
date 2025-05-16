@@ -4,20 +4,3 @@ In this section, we will go through some basic signal processing concepts that a
 
 ```{tableofcontents}
 ```
-
-<!-- ## Common signal types
-* sine wave
-* chirp
-* gated chirp
-* impulse
-
-## Sampling and Quantization
-## Cross-correlation
-## Time-Frequency Analysis 
-* Fourier Transform
-* Spectrogram
- -->
-
-
-
-
