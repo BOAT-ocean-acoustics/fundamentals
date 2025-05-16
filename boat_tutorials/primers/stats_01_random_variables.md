@@ -1,7 +1,7 @@
 (random-variables)=
 # Random Variables
 
-```{admonition} **Learning Objectives**
+```{admonition} Learning Objectives
 :class: tip
 * Outline the components of a statistical experiment.
 * Identify examples of each component within a scientific experiment.
