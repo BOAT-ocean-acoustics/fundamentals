@@ -3,6 +3,14 @@
 
 In this tutorial, we will look under the hood of the target strength (TS) term in the SONAR equation and examine foundational topics in acoustic scattering.
 
+```{admonition} **Learning objectives**
+:class: tip
+1. Become familiar with key terminology and concepts used in acoustic scattering
+2. Learn what echograms represent and how to interpret their patterns
+3. Understand the main factors that influence echoes from discrete scatterers
+4. Understand the main factors that influence echoes from rough surfaces
+```
+
 
 ## Target strength
 What is **target strength (TS)**? It is a measure of the amount of sound ("echo") energy bouncing off from an object (think: a fish), a surface (think: a patch of seafloor), or a volume of medium (think: a chunk of sandy sediment)--these are often called "target of interest." We also very often use the term **scattering strength (SS)** to refer to the same quantiy, depending on the context.

@@ -18,19 +18,18 @@ the methods to problems which do no follow a textbook definition.
 
 ## Parametric Distributions 
   * Normal distribution
+  * Skew-normal distribution
   * Cauchy distribution
   * Logistic distribution
   * Laplace distribution
   * Gamma distribution
-  * Skew-normal distribution
+  * Exercise: fitting a distribution by modifying parameters 
 
 
 ## Parameter Estimation (high level)
-  * Maximum Likelihood concept
-  * Exercise: Fitting a distribution by modifying parameters 
+  * Maximum Likelihood 
 
 ## Testing
-
 * Statistical Hypothesis
 * Test Statistic
 * Significance Level, Power
