@@ -3,6 +3,14 @@
 
 From our everyday experience, we encounter many sources of sound in our environment: A knuckle rapping on a door, the wind blowing through the leaves of tree, a group of people having a conversation, etc. While these sound sources are all very different from one another, they each have common properties that we can use to describe and compare them. These include the amplitude of the sound being produced, the changes in the sound over time, and the directions in which the sound is being projected. In the following notebook, we will look closely at these descriptors of sound, with a particular focus on sonar systems.
 
+```{admonition} **Learning objectives**
+:class: tip
+1. Learn the terminology used to describe the properties of a sound source.
+2. Understand the difference between the far-field and near-field of a transducer.
+3. Learn how the beampattern of a simple, circular piston source changes with frequency and size.
+4. Learn how the directionality of a sound source can be integrated into the sonar equation.
+```
+
 ## Source level
 
 Source level (SL) is a measure of the loudness of a sound source. From the orca examples, when Ola is [_purely listening_](acoustics-intro_orca_comms),
