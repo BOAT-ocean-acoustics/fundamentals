@@ -3,8 +3,8 @@
 
 ```{admonition} **Learning Objectives**
 :class: tip
-1. Outline the components of a statistical experiment.
-2. Identify examples of each component within a scientific experiment.
+* Outline the components of a statistical experiment.
+* Identify examples of each component within a scientific experiment.
 ```
 
 ## Ocean Sound Levels Experiment
