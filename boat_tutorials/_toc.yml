@@ -54,7 +54,7 @@ parts:
       sections:
       - file: primers/signal_processing_01_signals.ipynb
       - file: primers/signal_processing_02_sampling.ipynb 
-      # - file: primers/signal_processing_03_cross-correlation.ipynb 
+      - file: primers/signal_processing_03_cross-correlation.ipynb 
       - file: primers/signal_processing_04_time_freq.ipynb
       
     - file: primers/stats_00_outline
